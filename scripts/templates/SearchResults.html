@@ -1,0 +1,6 @@
+<section ng-class="{results: true, 'loading': vm.loader.loading}">
+  <div class="loading" ng-bind="vm.loader.message"></div>
+  <ul class="search-results">
+    <li ng-repeat="entry in vm.resultSet.entries" ng-bind="entry.title"></li>
+  </ul>
+</section>

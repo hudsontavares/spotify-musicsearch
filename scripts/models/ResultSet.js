@@ -7,5 +7,11 @@ define(["models/ResultEntry"], function (ResultEntry) {
     this.entries = source[target].items.map(function (item) {
       return new ResultEntry(item);
     });
+    this.merge = function (resultSet) {
+      this.limit  = resultSet.limit;
+      this.offset = resultSet.offset;
+      this.entries = this.entries.concat(resultSet.entries);
+      return this;
+    };
   }
 });
