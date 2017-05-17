@@ -1,11 +1,15 @@
 define([
   "services/DataService",
   "services/MessageService",
-  "directives/SearchHeader"
+  "directives/SearchHeader",
+  "directives/SearchBox",
+  "controllers/SearchBox"
 ], function (
   DataService,
   MessageService,
-  SearchHeader
+  SearchHeader,
+  SearchBox,
+  SearchBoxController
   ) {
 
   var app = angular.module("App", []);
@@ -16,6 +20,10 @@ define([
 
   /* Directives assignment */
   SearchHeader.assign(app);
+  SearchBox.assign(app);
+
+  /* Controller assignment */
+  SearchBoxController.assign(app);
 
   return app;
 });

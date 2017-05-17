@@ -2,8 +2,9 @@ define([
   "app",
   "models/ResultSet",
   "require.text!tests/sample.json",
-  "require.text!templates/SearchHeader.html"
-], function (app, ResultSet, sampleJson, SearchHeaderTemplate) {
+  "require.text!templates/SearchHeader.html",
+  "require.text!templates/SearchBox.html"
+], function (app, ResultSet, sampleJson, SearchHeaderTemplate, SearchBoxTemplate) {
 
     beforeEach(module("App"));
 
@@ -11,7 +12,7 @@ define([
       var MessageService;
 
       beforeEach( inject( function ($injector) {
-        MessageService = $injector.get("MessageService");
+        MessageService = $injector.get("MessageService").unregisterAll();
       }));
 
       it ("May be injected", function () {
@@ -22,7 +23,6 @@ define([
         var eventName = "sample-event";
         var listener = MessageService.register(eventName, function () {});
         expect(Array.isArray(MessageService.listeners(eventName))).toBe(true);
-        MessageService.unregister(listener);
       });
 
       it ("Triggers an event properly", function (done) {
@@ -81,6 +81,43 @@ define([
         var element = $compile("<search-header></search-header>")($rootScope);
         $rootScope.$digest();
         expect(element.html()).toContain("Powered by Spotify");
+      });
+    });
+
+    describe("SearchBox directive", function () {
+      var $compile, $rootScope, $httpBackend;
+
+      beforeEach( inject(function (_$compile_, _$rootScope_, $injector) {
+        $compile = _$compile_;
+        $rootScope = _$rootScope_;
+        $templateCache = $injector.get("$templateCache");
+        $templateCache.put("/scripts/templates/SearchBox.html", SearchBoxTemplate);
+      }));
+
+      it("Replaces HTML element", function () {
+        var element = $compile("<search-box><input type='text' name='SampleTranscludeField' ng-model='vm.params.q' /></search-box>")($rootScope);
+        $rootScope.$digest();
+        var form = element.find("form");
+        expect(form.length).toBe(1);
+        form.triggerHandler("submit");
+      });
+    });
+
+    describe("SearchBoxController controller", function () {
+      var $controller, MessageService;
+
+      beforeEach( inject(function (_$controller_, $injector) {
+        $controller = _$controller_;
+        MessageService = $injector.get("MessageService").unregisterAll();
+      }));
+
+      it("Triggers search", function (done) {
+        MessageService.register("searchbox:search", function (params) {
+          expect(typeof(params) === "object").toBe(true);
+          done();
+        });
+        var controller = $controller("SearchBoxController", { "$scope" : {} });
+        controller.search();
       });
     });
 });

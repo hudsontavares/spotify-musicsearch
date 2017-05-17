@@ -26,6 +26,12 @@ define(["models/EventListener"], function (EventListener) {
       return this;
     }
 
+    /* Removes all events */
+    this.unregisterAll = function () {
+      listeners = {};
+      return this;
+    }
+
     /* Triggers all the listeners for the specified event */
     this.trigger = function (event, params) {
       if (Array.isArray(listeners[event])) {
