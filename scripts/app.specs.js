@@ -1,4 +1,4 @@
-define(["app"], function () {
+define(["app", "tests/sample.json", "models/ResultSet"], function (app, json, ResultSet) {
 
     beforeEach(module("App"));
 
@@ -42,20 +42,22 @@ define(["app"], function () {
         expect(DataService).toBeTruthy();
       });
 
-      it ("Retrieves Spotify API data properly", function (done) {
+      it ("Digests Spotify API data properly", function (done) {
         DataService.get({
-          "q": "Norah Jones",
-          "type": "artist"
+          "q": "Kirk Franklin",
+          "type": "album"
         },
-        function (response) {
-          expect(response).toBeTruthy();
+        function (resultSet) {
+          expect(resultSet).toBeTruthy();
+          expect(resultSet instanceof ResultSet).toBe(true);
+          expect(Array.isArray(resultSet.entries)).toBe(true);
           done();
         },
         function (error) {
           done.fail("It must not fail.");
         });
 
-        $httpBackend.expect("GET", /api\.spotify\.com/gi).respond(200);
+        $httpBackend.expect("GET", /api\.spotify\.com/gi).respond(json);
         $httpBackend.flush();
       });
     });

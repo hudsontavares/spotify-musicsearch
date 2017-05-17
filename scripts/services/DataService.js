@@ -1,10 +1,17 @@
-define(['exports'], function (exports) {
+define(['exports', "models/ResultSet"], function (exports, ResultSet) {
     var DataService = function ($http) {
       this.baseUrl = 'https://api.spotify.com';
 
       /* Gets data from Spotify */
       this.get = function (params, success, failure) {
-        return $http.get(this.baseUrl + '/v1/search', params).then(success, failure);
+        params = params || {};
+        params.limit = params.limit || 12;
+
+        return $http.get(this.baseUrl + '/v1/search', params)
+          .then(function (response) {
+            success(new ResultSet(response.data));
+            return true;
+          }, failure);
       };
 
 
