@@ -4,8 +4,9 @@ define([
   "require.text!tests/sample.json",
   "require.text!templates/SearchHeader.html",
   "require.text!templates/SearchBox.html",
-  "require.text!templates/SearchResults.html"
-], function (app, ResultSet, sampleJson, SearchHeaderTemplate, SearchBoxTemplate, SearchResultsTemplate) {
+  "require.text!templates/SearchResults.html",
+  "require.text!templates/SearchFooter.html"
+], function (app, ResultSet, sampleJson, SearchHeaderTemplate, SearchBoxTemplate, SearchResultsTemplate, SearchFooterTemplate) {
 
     beforeEach(module("App"));
 
@@ -163,6 +164,23 @@ define([
         });
         MessageService.trigger("searchbox:search", {"q": "Sample Query"});
         $httpBackend.flush();
+      });
+    });
+
+    describe("SearchFooter directive", function () {
+      var $compile, $rootScope;
+
+      beforeEach( inject(function (_$compile_, _$rootScope_, $injector) {
+        $compile = _$compile_;
+        $rootScope = _$rootScope_;
+        $templateCache = $injector.get("$templateCache");
+        $templateCache.put("/scripts/templates/SearchFooter.html", SearchFooterTemplate);
+      }));
+
+      it("Replaces HTML element", function () {
+        var element = $compile("<search-footer></search-footer>")($rootScope);
+        $rootScope.$digest();
+        expect(element.html()).toContain("Powered by Spotify");
       });
     });
 });
