@@ -1,5 +1,4 @@
-define(['exports', 'models/EventListener'], function (exports, EventListener) {
-  Object.defineProperty(exports, "__esModule", { value: true });
+define(["models/EventListener"], function (EventListener) {
   var MessageService = function () {
     var listeners = {};
 

@@ -1,4 +1,4 @@
-define(['exports', "models/ResultSet"], function (exports, ResultSet) {
+define(["models/ResultSet"], function (ResultSet) {
     var DataService = function ($http) {
       this.baseUrl = 'https://api.spotify.com';
 

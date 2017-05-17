@@ -1,0 +1,13 @@
+{
+  "description": "Compucorp Senior/Lead Front End JS Engineer Test",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/hudsontavares/compucorp-js-test.git"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
