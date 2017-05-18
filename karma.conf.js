@@ -1,10 +1,20 @@
-/* TODO: finish setup of Karma */
 module.exports = function(config) {
   config.set({
-    basePath: './scripts/',
+    basePath: 'scripts',
     frameworks: ['jasmine', 'requirejs'],
     files: [
-      "tests/runner.js"
+      {pattern: "app.js", included: false},
+      {pattern: "app.spec.js", included: false},
+      {pattern: "angular.js", included: true},
+      {pattern: "angular-mocks.js", included: true},
+      {pattern: "require.text.js", included: false},
+      {pattern: "tests/sample.json", included: false},
+      {pattern: "controllers/*.js", included: false},
+      {pattern: "directives/*.js", included: false},
+      {pattern: "models/*.js", included: false},
+      {pattern: "services/*.js", included: false},
+      {pattern: "templates/*", included: false},
+      {pattern: "tests/karma.js", included: true}
     ],
     plugins: [
       require("karma-jasmine"),
@@ -12,6 +22,8 @@ module.exports = function(config) {
       require("karma-remap-istanbul"),
       require("karma-requirejs")
     ],
-    browsers: ["PhantomJS"]
+    browsers: ["PhantomJS"],
+    reporters: ['progress'],
+    colors: true
   });
 };
