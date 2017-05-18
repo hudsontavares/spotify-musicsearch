@@ -9,8 +9,8 @@
     <div class="viewport">
       <search-header></search-header>
       <search-box>
-        <input type="hidden" name="album" value="album" ng-model="searchBox.params.type" ng-init="searchBox.params.type = 'album'" />
-        <input type="search" name="search" id="search" ng-model="searchBox.params.q" ng-init="searchBox.params.q = ''" placeholder="Search for artist or album title" />
+        <input type="hidden" name="album" ng-model="searchBox.params.type" ng-init="searchBox.init('type', 'album', 'search type')" />
+        <input type="search" name="search" id="search" ng-model="searchBox.params.q" ng-init="searchBox.init('q', '', 'artist or album name')" placeholder="Search for artist or album title" />
         <button type="submit">Search</button>
       </search-box>
       <search-results></search-results>
