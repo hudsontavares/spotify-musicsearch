@@ -3,7 +3,20 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <title>Compucorp Music Search - Powered by Spotify</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
   </head>
   <body>
+    <div class="viewport">
+      <search-header></search-header>
+      <search-box>
+        <input type="hidden" name="album" value="album" ng-model="searchBox.params.type" ng-init="searchBox.params.type = 'album'" />
+        <input type="search" name="search" id="search" ng-model="searchBox.params.q" ng-init="searchBox.params.q = ''" placeholder="Search for artist or album title" />
+        <button type="submit">Search</button>
+      </search-box>
+      <search-results></search-results>
+      <search-footer></search-footer>
+    </div>
+    <script type="text/javascript" src="scripts/angular.js"></script>
+    <script type="text/javascript" src="scripts/require.js" data-main="scripts/main.js"></script>
   </body>
 </html>

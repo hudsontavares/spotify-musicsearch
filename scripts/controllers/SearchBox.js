@@ -1,7 +1,9 @@
-define ([], function () {
+define (["utils/index"], function (Utils) {
+
     var SearchBox = function (MessageService) {
       this.params = {};
-      this.search = function () {
+      this.search = function (event) {
+        Utils.preventEvent(event);
         MessageService.trigger("searchbox:search", this.params);
         return true;
       };

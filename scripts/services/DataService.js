@@ -6,12 +6,17 @@ define(["models/ResultSet"], function (ResultSet) {
       this.get = function (params, success, failure) {
         params = params || {};
         params.limit = params.limit || 12;
+        params.q = params.q || "";
 
-        return $http.get(this.baseUrl + '/v1/search', params)
-          .then(function (response) {
-            success(new ResultSet(response.data));
-            return true;
-          }, failure);
+        return $http({
+          "method": "GET",
+          "url": this.baseUrl + "/v1/search",
+          "params": params
+        })
+        .then(function (response) {
+          success(new ResultSet(response.data));
+          return true;
+        }, failure);
       };
 
 

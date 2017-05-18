@@ -3,7 +3,8 @@ define (["controllers/SearchResults"], function (SearchResultsController) {
       "restrict": "E",
       "templateUrl": "/scripts/templates/SearchResults.html",
       "controller": SearchResultsController,
-      "controllerAs": "vm"
+      "controllerAs": "searchResults",
+      "bindToController": true
     };
 
     /* Dependencies injection */

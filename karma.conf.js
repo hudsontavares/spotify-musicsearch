@@ -13,6 +13,7 @@ module.exports = function(config) {
       {pattern: "directives/*.js", included: false},
       {pattern: "models/*.js", included: false},
       {pattern: "services/*.js", included: false},
+      {pattern: "utils/*.js", included: false},
       {pattern: "templates/*", included: false},
       {pattern: "tests/karma.js", included: true}
     ],

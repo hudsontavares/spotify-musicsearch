@@ -3,7 +3,8 @@ define (["controllers/SearchBox"], function (SearchBoxController) {
       "restrict": "E",
       "templateUrl": "/scripts/templates/SearchBox.html",
       "controller": SearchBoxController,
-      "controllerAs": "vm",
+      "controllerAs": "searchBox",
+      "bindToController": true,
       "transclude": true
     };
 
