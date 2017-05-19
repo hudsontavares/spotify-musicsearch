@@ -142,7 +142,7 @@ define([
         $httpBackend.flush();
 
         var entries = element.find("li");
-        expect(entries.length).toBe(12);
+        expect(entries.length).toBe(55);
       });
     });
 

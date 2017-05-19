@@ -1,17 +1,14 @@
 define(["models/ResultEntry"], function (ResultEntry) {
-  return function ResultSet(source) {
-    var target = Object.keys(source)[0];
-    this.totalEntries = source[target].total;
-    this.limit = source[target].limit;
-    this.offset = source[target].offset;
-    this.entries = source[target].items.map(function (item) {
-      return new ResultEntry(item);
-    });
-    this.merge = function (resultSet) {
-      this.limit  = resultSet.limit;
-      this.offset = resultSet.offset;
-      this.entries = this.entries.concat(resultSet.entries);
-      return this;
-    };
+  return function ResultSet(source, limit) {
+    this.entries = [];
+
+    for (var keys = Object.keys(source).reverse(), counter = 0, size = keys.length; counter < size; counter++) {
+      var key = keys[counter];
+      this.entries = this.entries.concat(source[key].items.map( function (item) {
+        return new ResultEntry(item);
+      }));
+    }
+
+    return this;
   }
 });

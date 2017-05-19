@@ -6,7 +6,8 @@ define([
   "directives/SearchResults",
   "directives/SearchFooter",
   "controllers/SearchBox",
-  "controllers/SearchResults"
+  "controllers/SearchResults",
+  "ng-load"
 ], function (
   DataService,
   MessageService,
@@ -18,7 +19,7 @@ define([
   SearchResultsController
   ) {
 
-  var app = angular.module("App", []);
+  var app = angular.module("App", ['ngLoad']);
 
   /* Services assignment */
   DataService.assign(app);

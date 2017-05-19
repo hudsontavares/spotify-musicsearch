@@ -5,9 +5,11 @@ define([], function () {
   }
 
   return function ResultEntry(source) {
-    this.type = source.album_type;
+    this.type = source.album_type || source.type;
     this.title = source.name;
-    this.image = hasEntries(source.images)? source.images[0].url : null;
+    this.image = hasEntries(source.images)? source.images[0] : null;
     this.href = source.uri;
+    this.loaded = this.image === null;
+    this.horizontal = this.image !== null && this.image.width >= this.image.height;
   }
 });

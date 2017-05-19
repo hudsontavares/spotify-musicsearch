@@ -1,26 +1,55 @@
-define ([], function () {
+define (["utils/index"], function (Utils) {
     function Loader(loading, message) {
-      this.loading = typeof(loading) === "boolean" ? loading : false;
-      this.message = typeof(message) === "string" ? message : "Loading data, please wait...";
+      this.loading = loading;
+      this.message = message;
+      this.set = function (message) {
+        this.loading = true;
+        this.message = message;
+        return this;
+      };
+      this.unset = function () {
+        this.loading = false;
+        return this;
+      };
       return this;
     };
 
     var SearchResults = function (MessageService, DataService) {
       var ref = this;
-      ref.resultSet = null;
-      ref.loader = new Loader();
+
+      this.resultSet = null;
+      this.loader = new Loader(true, "Your results will appear here");
+      this.utils = Utils;
+
+      this.resultsPerPage = this.resultsPerPage || 0;
+      this.resultsShown = 0;
+
+      this.hasMore = function () {
+        return this.resultSet !== null && this.resultsShown < this.resultSet.entries.length;
+      };
+
+      this.showMore = function() {
+        this.resultsShown = parseInt(this.resultsShown) + parseInt(this.resultsPerPage);
+        return this;
+      };
+
       MessageService.register(
         "searchbox:search",
         function (params) {
+          ref.loader.set("Loading data, please wait...");
+          ref.resultsShown = ref.resultsPerPage;
           DataService.get(params, function (resultSet) {
-          MessageService.trigger("searchbox:results",
-            ref.resultSet = ref.resultSet === null ? resultSet : ref.resultSet.merge(resultSet)
-          );
-          return true;
+          MessageService.trigger("searchbox:results", ref.resultSet = resultSet, this.resultsPerPage);
+          if (ref.resultSet.entries.length === 0) {
+            ref.loader.message = "No results found.";
+            return;
+          }
+          Utils.addClass(document.body, "with-results");
+          ref.loader.unset();
         },
         function (error) {
-          /* TODO: error handling */
-          console.log(error);
+          Utils.removeClass(document.body, "with-results");
+          return ref.loader.set(error);
         }
       );
       });

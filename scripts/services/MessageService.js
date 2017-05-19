@@ -33,10 +33,12 @@ define(["models/EventListener"], function (EventListener) {
     }
 
     /* Triggers all the listeners for the specified event */
-    this.trigger = function (event, params) {
+    this.trigger = function (event) {
       if (Array.isArray(listeners[event])) {
+        var args = arguments;
         listeners[event].forEach( function (listener) {
-          listener.action(params);
+          var params = Array.prototype.slice.call(args);
+          listener.action.apply(listener, params.slice(1));
         });
       }
       return this;

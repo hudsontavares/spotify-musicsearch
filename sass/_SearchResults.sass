@@ -1,0 +1,83 @@
+search-results
+
+  section
+    display: block
+
+  .results.loading
+    background-color: #383A49
+    padding-top: 14.6rem
+    padding-bottom: 14.6rem
+    .loaded
+      display: none
+    .loading
+      display: block
+      padding: 28.9rem 0 9.3rem 0
+      color: #474958
+      font: 2.2em/1 $font-raleway
+      text-align: center
+      background: no-repeat center 8.9rem/16.9rem 16.3rem url("../images/magnifier.png")
+
+  .results
+    padding: 5.9rem 14.6rem
+    .loading
+      display: none
+    .more
+      text-align: center
+      display: none
+    .more.visible
+      display: block
+    li
+      +transition(0.5s)
+      +position(relative)
+      +size(26.3rem, 33.0rem)
+      display: inline-block
+      cursor: pointer
+      overflow: hidden
+      margin: 0 2.5rem 6rem 0
+      vertical-align: top
+      opacity: 0
+      border: none
+      border-radius: 0.4rem
+    li.loaded
+      opacity: 1
+    li:before
+      +position(absolute, $bottom: 7.9rem, $left: 1.5rem)
+      +size(2.5rem, 2.5rem)
+      display: block
+      content: ""
+      background: no-repeat center/cover url("../images/disc_small.png")
+      opacity: 0.3
+      z-index: 2
+    li[data-type="artist"]:before
+      background-image: url("../images/artist_small.png")
+    li:after
+      +position(absolute, $bottom: 0, $right: 0)
+      +size(calc(100% - 4rem))
+      +truncate-text()
+      padding: 2.3rem 2rem
+      display: block
+      background-color: white
+      color: #2A2A33
+      font: 1.8em/1 $font-montserrat
+      content: attr(data-title)
+    li:hover:before, li[data-type="artist"]:hover:before
+      +size(15rem, auto)
+      +position(absolute, $top: 8.5rem, $left: 5.2rem)
+      padding-top: 10rem
+      background: no-repeat center top/10rem 8.8rem url("../images/details.png")
+      font: 1.8em/1 $font-raleway
+      color: white
+      opacity: 1
+      content: "View Tracks"
+      text-align: center
+    li[data-type="artist"]:hover:before
+      content: "View Albums"
+    li:hover:after
+      +untruncate-text()
+    li:hover img
+      filter: blur(1rem)
+    img
+      +size(100%, auto)
+      +transition(0.7s)
+    img.horizontal
+      +size(auto, 100%)

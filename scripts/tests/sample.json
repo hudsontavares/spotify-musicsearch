@@ -1,6 +1,6 @@
 {
   "albums" : {
-    "href" : "https://api.spotify.com/v1/search?query=Kirk+Franklin&type=album&offset=0&limit=12",
+    "href" : "https://api.spotify.com/v1/search?query=kirk+franklin&type=album&offset=0&limit=50",
     "items" : [ {
       "album_type" : "album",
       "artists" : [ {
@@ -427,11 +427,1326 @@
       "name" : "Whatcha Lookin' 4",
       "type" : "album",
       "uri" : "spotify:album:0Ire0yqH9G0mycLF1jrXxD"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4HyeSvKpXXTgQjXa1RVIIz"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4HyeSvKpXXTgQjXa1RVIIz",
+      "id" : "4HyeSvKpXXTgQjXa1RVIIz",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/8e222bae52fd0a93c0a4622c706fd347b483ef6e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/152fdef853ec802eb4aec58fcbf1681cf418ff8f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ddc76f258230c960f43bdd6eeef98b4e8e5d29ef",
+        "width" : 64
+      } ],
+      "name" : "Kirk Franklin Presents Songs For The Storm, Volume 1",
+      "type" : "album",
+      "uri" : "spotify:album:4HyeSvKpXXTgQjXa1RVIIz"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7sr0AAKTi7DZTUhzJXydc5"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7sr0AAKTi7DZTUhzJXydc5",
+      "id" : "7sr0AAKTi7DZTUhzJXydc5",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/0c128c72540a759750320c48f461530a34716a50",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/79abb28e09693aa945b13d6658a48ecce2e9a703",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7b3ed44ff589ccff5396cdda16ae5f4843c8ff91",
+        "width" : 64
+      } ],
+      "name" : "Wanna Be Happy?",
+      "type" : "album",
+      "uri" : "spotify:album:7sr0AAKTi7DZTUhzJXydc5"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3iIGoy5Xj3bKYqtH0B37RP"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3iIGoy5Xj3bKYqtH0B37RP",
+      "id" : "3iIGoy5Xj3bKYqtH0B37RP",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/d596b090876a50581c5b0e9adec48106700b5858",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/bc8b406dd4270fa5e1af051b0620400ae9a542e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/a977c8a9c0c068a74876fcf3e56da4bb538fb1b1",
+        "width" : 64
+      } ],
+      "name" : "Losing My Religion",
+      "type" : "album",
+      "uri" : "spotify:album:3iIGoy5Xj3bKYqtH0B37RP"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/63maQY4nUhYjEduHGsIHEZ"
+      },
+      "href" : "https://api.spotify.com/v1/albums/63maQY4nUhYjEduHGsIHEZ",
+      "id" : "63maQY4nUhYjEduHGsIHEZ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3f3e75b4f4da01f9be9f5c218454b7bb648e0070",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/d45a7ee4103906757b4e5cf37ab87a5242c30083",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d6b7da76a68be57464d85448781d0c2d793b1d54",
+        "width" : 64
+      } ],
+      "name" : "I Smile",
+      "type" : "album",
+      "uri" : "spotify:album:63maQY4nUhYjEduHGsIHEZ"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2LEbJTBi1Wi88sb3SWRxg4"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2LEbJTBi1Wi88sb3SWRxg4",
+      "id" : "2LEbJTBi1Wi88sb3SWRxg4",
+      "images" : [ {
+        "height" : 634,
+        "url" : "https://i.scdn.co/image/548a94287de2c5e92e9b28d1a4ff1d1ac308922d",
+        "width" : 640
+      }, {
+        "height" : 297,
+        "url" : "https://i.scdn.co/image/8ae7dd8c2f7c239ef9454b2dd6e4f40b9e0783e8",
+        "width" : 300
+      }, {
+        "height" : 63,
+        "url" : "https://i.scdn.co/image/12df631222ef5f0e81dc4492d09fea20cafa664e",
+        "width" : 64
+      } ],
+      "name" : "Christmas",
+      "type" : "album",
+      "uri" : "spotify:album:2LEbJTBi1Wi88sb3SWRxg4"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AR", "AU", "BO", "BR", "CL", "CO", "CR", "DO", "EC", "GT", "HN", "MX", "NI", "NZ", "PA", "PE", "PY", "SV", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7jI7E2aLZZucXkAQQlJMEV"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7jI7E2aLZZucXkAQQlJMEV",
+      "id" : "7jI7E2aLZZucXkAQQlJMEV",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6463d06836ad2702d125dcddc4c2d0bc1c1f8ab0",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/53c22e03933fd601542fe571b578b53558331e5b",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c5e1249234fbdfdb560c3342790af4a7721951c2",
+        "width" : 64
+      } ],
+      "name" : "A Season Of Remixes",
+      "type" : "album",
+      "uri" : "spotify:album:7jI7E2aLZZucXkAQQlJMEV"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5lhBh8SIDpeWb48FZn4cYq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5lhBh8SIDpeWb48FZn4cYq",
+      "id" : "5lhBh8SIDpeWb48FZn4cYq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/7fdc6e118f2c6982b25ebf0363e5a1140ded020a",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/a4d43ed5fe1e6506f4d02481d92b5be75feba75a",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c4f2a30d2d381728c2f6fe9e8ac18f4751c0a79e",
+        "width" : 64
+      } ],
+      "name" : "123 Victory (Remix)",
+      "type" : "album",
+      "uri" : "spotify:album:5lhBh8SIDpeWb48FZn4cYq"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7gpaBUDq5BtOqm6h5hpBVF"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7gpaBUDq5BtOqm6h5hpBVF",
+      "id" : "7gpaBUDq5BtOqm6h5hpBVF",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/d596b090876a50581c5b0e9adec48106700b5858",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/bc8b406dd4270fa5e1af051b0620400ae9a542e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/a977c8a9c0c068a74876fcf3e56da4bb538fb1b1",
+        "width" : 64
+      } ],
+      "name" : "123 Victory",
+      "type" : "album",
+      "uri" : "spotify:album:7gpaBUDq5BtOqm6h5hpBVF"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AR", "AT", "BO", "CA", "CH", "CL", "JP", "LI", "PY", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3HAPGEK06a4YKs4Ei1mVle"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3HAPGEK06a4YKs4Ei1mVle",
+      "id" : "3HAPGEK06a4YKs4Ei1mVle",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2538a539a93a4bf6811e824d8a457d02afce6164",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/8f1b171aeec60d4d040137fd334208ff1e50fa88",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/2c60d1d4aac791e528fb85d905d17608a5fefcea",
+        "width" : 64
+      } ],
+      "name" : "Looking for You",
+      "type" : "album",
+      "uri" : "spotify:album:3HAPGEK06a4YKs4Ei1mVle"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/64n84UrJ0CGb12z3qGV4ql"
+        },
+        "href" : "https://api.spotify.com/v1/artists/64n84UrJ0CGb12z3qGV4ql",
+        "id" : "64n84UrJ0CGb12z3qGV4ql",
+        "name" : "1NC",
+        "type" : "artist",
+        "uri" : "spotify:artist:64n84UrJ0CGb12z3qGV4ql"
+      } ],
+      "available_markets" : [ "US" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1ReamWFpVkHxxqo7yEMlMo"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1ReamWFpVkHxxqo7yEMlMo",
+      "id" : "1ReamWFpVkHxxqo7yEMlMo",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3b0f0fb56d0612f0e76170ccedd958be2590a3b2",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ec71beed443b7a0d9050d91254aad025e84ba45a",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/48d4a37b7d27b8df0bb36e5bdc8e26c7a639cf29",
+        "width" : 64
+      } ],
+      "name" : "Kirk Franklin Presents 1NC",
+      "type" : "album",
+      "uri" : "spotify:album:1ReamWFpVkHxxqo7yEMlMo"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4gbpMKlkQNNwfrvTQRs4GA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4gbpMKlkQNNwfrvTQRs4GA",
+        "id" : "4gbpMKlkQNNwfrvTQRs4GA",
+        "name" : "Christian Music For Babies",
+        "type" : "artist",
+        "uri" : "spotify:artist:4gbpMKlkQNNwfrvTQRs4GA"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0O1oGRwXbFKjGvhwxdJr5Z"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0O1oGRwXbFKjGvhwxdJr5Z",
+      "id" : "0O1oGRwXbFKjGvhwxdJr5Z",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/39e78d7ab3c97cf766c6f6151f987121f2666edf",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/cad79136bcc3ae128d850d459bc8543333e57ef2",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7ef3c8f5be45deb05397d44183ac471d152db937",
+        "width" : 64
+      } ],
+      "name" : "Lullaby Versions of Kirk Franklin",
+      "type" : "album",
+      "uri" : "spotify:album:0O1oGRwXbFKjGvhwxdJr5Z"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2fizYQ6PTbXb0JFOiDZJ63"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2fizYQ6PTbXb0JFOiDZJ63",
+        "id" : "2fizYQ6PTbXb0JFOiDZJ63",
+        "name" : "Judson Mancebo",
+        "type" : "artist",
+        "uri" : "spotify:artist:2fizYQ6PTbXb0JFOiDZJ63"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5rM03VzLhJlpWJXCB1pCzF"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5rM03VzLhJlpWJXCB1pCzF",
+      "id" : "5rM03VzLhJlpWJXCB1pCzF",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/99fdc190f474f1867326750a3230fe095e7ad42a",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/606099da34ff1a0c82dac139860cd490e4db4685",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/191e471b3a07500b0b6411d7e732f0e69ccb9053",
+        "width" : 64
+      } ],
+      "name" : "Just for Babies: Lullaby Renditions of Kirk Franklin",
+      "type" : "album",
+      "uri" : "spotify:album:5rM03VzLhJlpWJXCB1pCzF"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+        "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+        "name" : "Kirk Franklin",
+        "type" : "artist",
+        "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5aPRM7LVFd2WPpZ9wMH6Jn"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5aPRM7LVFd2WPpZ9wMH6Jn",
+      "id" : "5aPRM7LVFd2WPpZ9wMH6Jn",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/d596b090876a50581c5b0e9adec48106700b5858",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/bc8b406dd4270fa5e1af051b0620400ae9a542e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/a977c8a9c0c068a74876fcf3e56da4bb538fb1b1",
+        "width" : 64
+      } ],
+      "name" : "Road Trip",
+      "type" : "album",
+      "uri" : "spotify:album:5aPRM7LVFd2WPpZ9wMH6Jn"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1CRmBKE7OWADvnIcoAyXw5"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1CRmBKE7OWADvnIcoAyXw5",
+        "id" : "1CRmBKE7OWADvnIcoAyXw5",
+        "name" : "Música Cristiana Para Niños",
+        "type" : "artist",
+        "uri" : "spotify:artist:1CRmBKE7OWADvnIcoAyXw5"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7Mtl0tq6miAZ2bheVcwbx9"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7Mtl0tq6miAZ2bheVcwbx9",
+      "id" : "7Mtl0tq6miAZ2bheVcwbx9",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/8bd06a2da441eb7c7066cee0786df251ef3d633c",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/60fc801c93698c51a2629abda22c4f190eb4d044",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/0b75b0914bc4a216469022bc85c09cd847343c24",
+        "width" : 64
+      } ],
+      "name" : "Música Cristiana Para Bebés: Kirk Franklin",
+      "type" : "album",
+      "uri" : "spotify:album:7Mtl0tq6miAZ2bheVcwbx9"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1O6Dsp61rF0wJRebkppsC2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1O6Dsp61rF0wJRebkppsC2",
+        "id" : "1O6Dsp61rF0wJRebkppsC2",
+        "name" : "Kirk Franklin Presents Artists United For Haiti",
+        "type" : "artist",
+        "uri" : "spotify:artist:1O6Dsp61rF0wJRebkppsC2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2LF3cDRJagimXJ9Wuwkro0"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2LF3cDRJagimXJ9Wuwkro0",
+      "id" : "2LF3cDRJagimXJ9Wuwkro0",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/49d720aa6b221d1d8636d2d07ef537acdfd2ca61",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/a1651c221f0c473917edc401f714d3e32c74b8db",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/59bcc2d99a21743220864f45494b42d4a4447a12",
+        "width" : 64
+      } ],
+      "name" : "Are You Listening",
+      "type" : "album",
+      "uri" : "spotify:album:2LF3cDRJagimXJ9Wuwkro0"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ThUOWiiWP3YdZqs4WYNOi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ThUOWiiWP3YdZqs4WYNOi",
+        "id" : "2ThUOWiiWP3YdZqs4WYNOi",
+        "name" : "Smooth Jazz All Stars",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ThUOWiiWP3YdZqs4WYNOi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1fT0LorgBnkx8Hz9gM0fgi"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1fT0LorgBnkx8Hz9gM0fgi",
+      "id" : "1fT0LorgBnkx8Hz9gM0fgi",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/5b617d1f1ceeb2b9a1c921e49f3bf13a4c994598",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ea5eb2ce438a9d518107769a7592baf9ecde9bd6",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/a60532c3dadb99f3de996330e3ef9838165f1822",
+        "width" : 64
+      } ],
+      "name" : "Kirk Franklin Smooth Jazz Tribute",
+      "type" : "album",
+      "uri" : "spotify:album:1fT0LorgBnkx8Hz9gM0fgi"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6E9heSAUX7MGtxXpCJ5wlv"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6E9heSAUX7MGtxXpCJ5wlv",
+        "id" : "6E9heSAUX7MGtxXpCJ5wlv",
+        "name" : "The Worship Crew",
+        "type" : "artist",
+        "uri" : "spotify:artist:6E9heSAUX7MGtxXpCJ5wlv"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1yIJXJ4AMHIKxqy5jXPTD2"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1yIJXJ4AMHIKxqy5jXPTD2",
+      "id" : "1yIJXJ4AMHIKxqy5jXPTD2",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/87f26d2b5e46df789dc72e3433841b44c666ff60",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/d3449610face986e30fb2fdf38a655b112ea3f11",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/67a664423c68af5cbed342718c37a10c2c179f9c",
+        "width" : 64
+      } ],
+      "name" : "A Gospel Tribute to Kirk Franklin",
+      "type" : "album",
+      "uri" : "spotify:album:1yIJXJ4AMHIKxqy5jXPTD2"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7ihHolAdjjtkPQNBV3dwwX"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7ihHolAdjjtkPQNBV3dwwX",
+        "id" : "7ihHolAdjjtkPQNBV3dwwX",
+        "name" : "Ameritz Digital Karaoke",
+        "type" : "artist",
+        "uri" : "spotify:artist:7ihHolAdjjtkPQNBV3dwwX"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2WDMXZwFm6xgqFjjsan0ae"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2WDMXZwFm6xgqFjjsan0ae",
+      "id" : "2WDMXZwFm6xgqFjjsan0ae",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2bc126d6617c60e3b77368f2b83a9cd26f0a8a9e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/f63ea1f1d00aa1f05478cd9ffd776588322a8b07",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/59b390db8b9dc30f05c01f83484a4269d66aa36c",
+        "width" : 64
+      } ],
+      "name" : "Karaoke (In the Style of Kirk Franklin)",
+      "type" : "album",
+      "uri" : "spotify:album:2WDMXZwFm6xgqFjjsan0ae"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2yLe3fKowM0OwQMsVGBDPD"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2yLe3fKowM0OwQMsVGBDPD",
+        "id" : "2yLe3fKowM0OwQMsVGBDPD",
+        "name" : "Ameritz - Tributes",
+        "type" : "artist",
+        "uri" : "spotify:artist:2yLe3fKowM0OwQMsVGBDPD"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5iVA1SRpMS8ADxJiSD4Kfh"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5iVA1SRpMS8ADxJiSD4Kfh",
+      "id" : "5iVA1SRpMS8ADxJiSD4Kfh",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/83458d058563f4762b4ebb9ef8c3287ae99d59e2",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/170f94a7efa0c713e2c8ccc953a0fbd38a575a5f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/96c90156a7c7b14b3aa58a48e251321680eebcf8",
+        "width" : 64
+      } ],
+      "name" : "Hello Fear - A Tribute to Kirk Franklin - Single",
+      "type" : "album",
+      "uri" : "spotify:album:5iVA1SRpMS8ADxJiSD4Kfh"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6E9heSAUX7MGtxXpCJ5wlv"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6E9heSAUX7MGtxXpCJ5wlv",
+        "id" : "6E9heSAUX7MGtxXpCJ5wlv",
+        "name" : "The Worship Crew",
+        "type" : "artist",
+        "uri" : "spotify:artist:6E9heSAUX7MGtxXpCJ5wlv"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4GsIve7WH7K7tCG9vZ58Ya"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4GsIve7WH7K7tCG9vZ58Ya",
+      "id" : "4GsIve7WH7K7tCG9vZ58Ya",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/0987e4e0246a842c200aaf81e09a482bcc0a0630",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/273b6658fca839be01b63b6c589374e6a883cab0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/da13b5480c5342884676999e74757cfaa6232ab7",
+        "width" : 64
+      } ],
+      "name" : "A Gospel Tribute to Mary Mary & Kirk Franklin",
+      "type" : "album",
+      "uri" : "spotify:album:4GsIve7WH7K7tCG9vZ58Ya"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7HeCM9ZXhRHUU0yeMnMYq1"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7HeCM9ZXhRHUU0yeMnMYq1",
+        "id" : "7HeCM9ZXhRHUU0yeMnMYq1",
+        "name" : "Fruition Music Inc.",
+        "type" : "artist",
+        "uri" : "spotify:artist:7HeCM9ZXhRHUU0yeMnMYq1"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2uFbkiKhLqipSjWZTj5iGb"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2uFbkiKhLqipSjWZTj5iGb",
+      "id" : "2uFbkiKhLqipSjWZTj5iGb",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/979058fb802f2e94595dccb9c1229ddd944fa0f6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/0bc2845ce1d6168c6793a60f1d34ed239ec53309",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c0e35e52c7577d7f6f0dc2a9a765b86214295159",
+        "width" : 64
+      } ],
+      "name" : "Imagine Me (Originally Performed by Kirk Franklin) [Instrumental Version]",
+      "type" : "album",
+      "uri" : "spotify:album:2uFbkiKhLqipSjWZTj5iGb"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7HeCM9ZXhRHUU0yeMnMYq1"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7HeCM9ZXhRHUU0yeMnMYq1",
+        "id" : "7HeCM9ZXhRHUU0yeMnMYq1",
+        "name" : "Fruition Music Inc.",
+        "type" : "artist",
+        "uri" : "spotify:artist:7HeCM9ZXhRHUU0yeMnMYq1"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0pQpszk1Oqfn5WyvQX9rkA"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0pQpszk1Oqfn5WyvQX9rkA",
+      "id" : "0pQpszk1Oqfn5WyvQX9rkA",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6cf62155279d490b1a29484beb6fe030e7715473",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/8ab005c5f4db569418a30b329d43d1549d3fa860",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/dd072a125556ed46f1bf5dc28e9d652acfece2db",
+        "width" : 64
+      } ],
+      "name" : "Hosanna (Originally Performed by Kirk Franklin) [Instrumental Performance Tracks]",
+      "type" : "album",
+      "uri" : "spotify:album:0pQpszk1Oqfn5WyvQX9rkA"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0UY7EBV2ScS19NHodxcCvB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0UY7EBV2ScS19NHodxcCvB",
+        "id" : "0UY7EBV2ScS19NHodxcCvB",
+        "name" : "Fruition Music Inc",
+        "type" : "artist",
+        "uri" : "spotify:artist:0UY7EBV2ScS19NHodxcCvB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0zTH1lm9o8XMfFdEzeUr1d"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0zTH1lm9o8XMfFdEzeUr1d",
+      "id" : "0zTH1lm9o8XMfFdEzeUr1d",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/8cfd5f690583e8c932d874010203b2a66b876025",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/d3d0b4bf31b60949d70834d6583a627ce7f01269",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/9a7359cfcfc19869fd5e749526c12853fa4e3855",
+        "width" : 64
+      } ],
+      "name" : "Wanna Be Happy? (Originally Performed by Kirk Franklin) [Instrumental Versions]",
+      "type" : "album",
+      "uri" : "spotify:album:0zTH1lm9o8XMfFdEzeUr1d"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0FQnTKF71zmqOzMB1ulput"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0FQnTKF71zmqOzMB1ulput",
+        "id" : "0FQnTKF71zmqOzMB1ulput",
+        "name" : "ProSound Karaoke Band",
+        "type" : "artist",
+        "uri" : "spotify:artist:0FQnTKF71zmqOzMB1ulput"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/313Cjeinri7harp6tb5Efm"
+      },
+      "href" : "https://api.spotify.com/v1/albums/313Cjeinri7harp6tb5Efm",
+      "id" : "313Cjeinri7harp6tb5Efm",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/688e4bea3d6c1e8367f5e81737b73e368b717c03",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/45d9321501713579d5e6578d67a34989b777571c",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/9fd3f68c7186b13ec89eb0dbf811ba75d02c2ae1",
+        "width" : 64
+      } ],
+      "name" : "Karaoke - In the Style of Kirk Franklin - EP (Professional Performance Tracks)",
+      "type" : "album",
+      "uri" : "spotify:album:313Cjeinri7harp6tb5Efm"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7HeCM9ZXhRHUU0yeMnMYq1"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7HeCM9ZXhRHUU0yeMnMYq1",
+        "id" : "7HeCM9ZXhRHUU0yeMnMYq1",
+        "name" : "Fruition Music Inc.",
+        "type" : "artist",
+        "uri" : "spotify:artist:7HeCM9ZXhRHUU0yeMnMYq1"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0zBY4EpqTxp31MacnHqo60"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0zBY4EpqTxp31MacnHqo60",
+      "id" : "0zBY4EpqTxp31MacnHqo60",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3ab5381956f52881fd370600903e0cb3d2ba8694",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ee057333494d2a59ed441ea18591fe0255cf262c",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/f6318d405d548bd0dd206108dfcd5ba07a2cdc64",
+        "width" : 64
+      } ],
+      "name" : "Now Behold the Lamb (Originally Performed by Kirk Franklin) [Instrumental Versions]",
+      "type" : "album",
+      "uri" : "spotify:album:0zBY4EpqTxp31MacnHqo60"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ThUOWiiWP3YdZqs4WYNOi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ThUOWiiWP3YdZqs4WYNOi",
+        "id" : "2ThUOWiiWP3YdZqs4WYNOi",
+        "name" : "Smooth Jazz All Stars",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ThUOWiiWP3YdZqs4WYNOi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5cdNjqNcMODSwWg2iwSP03"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5cdNjqNcMODSwWg2iwSP03",
+      "id" : "5cdNjqNcMODSwWg2iwSP03",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e7af1ebc8c1241b868dacc8f5d108b858e1e8ff7",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/a385c7831818eba0b1cc1872c5ea0fc8c5da3f5e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/6dfd6afb5b71ba65ea212d3d3b7ce36ba4126eac",
+        "width" : 64
+      } ],
+      "name" : "Smooth Jazz Tribute to The Best of Kirk Franklin",
+      "type" : "album",
+      "uri" : "spotify:album:5cdNjqNcMODSwWg2iwSP03"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6pxlau9PGA7rC0KhOMsVAx"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6pxlau9PGA7rC0KhOMsVAx",
+        "id" : "6pxlau9PGA7rC0KhOMsVAx",
+        "name" : "Ameritz Audio Karaoke",
+        "type" : "artist",
+        "uri" : "spotify:artist:6pxlau9PGA7rC0KhOMsVAx"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/31We7hX1l0B0Nu3mY0Njvz"
+      },
+      "href" : "https://api.spotify.com/v1/albums/31We7hX1l0B0Nu3mY0Njvz",
+      "id" : "31We7hX1l0B0Nu3mY0Njvz",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e81784b31c6d7015dc5a0d59596d33641f2e6885",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/105cb8b3f4ba88d1ac7a5c2f5b182a93cd776ebb",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/4542b551b7bb1a80e61c0db162996a1e0aa23c63",
+        "width" : 64
+      } ],
+      "name" : "I Smile (In the Style of Kirk Franklin) [Karaoke Version] - Single",
+      "type" : "album",
+      "uri" : "spotify:album:31We7hX1l0B0Nu3mY0Njvz"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0UY7EBV2ScS19NHodxcCvB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0UY7EBV2ScS19NHodxcCvB",
+        "id" : "0UY7EBV2ScS19NHodxcCvB",
+        "name" : "Fruition Music Inc",
+        "type" : "artist",
+        "uri" : "spotify:artist:0UY7EBV2ScS19NHodxcCvB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5Hssz2H2mobLpNTvH8J964"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5Hssz2H2mobLpNTvH8J964",
+      "id" : "5Hssz2H2mobLpNTvH8J964",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/c7d7a2878f34ed0e925b334990ffd363a00814c6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/073756842aa8f1c056d6273463f5b9155b36c219",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/8c10444f454abff4f65db28ecbb5bf7ea251468b",
+        "width" : 64
+      } ],
+      "name" : "Why We Sing (Originally Performed by Kirk Franklin) [Instrumental Performance Tracks]",
+      "type" : "album",
+      "uri" : "spotify:album:5Hssz2H2mobLpNTvH8J964"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6pxlau9PGA7rC0KhOMsVAx"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6pxlau9PGA7rC0KhOMsVAx",
+        "id" : "6pxlau9PGA7rC0KhOMsVAx",
+        "name" : "Ameritz Audio Karaoke",
+        "type" : "artist",
+        "uri" : "spotify:artist:6pxlau9PGA7rC0KhOMsVAx"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2q3EpnhOUqrwbHg6bfdZk8"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2q3EpnhOUqrwbHg6bfdZk8",
+      "id" : "2q3EpnhOUqrwbHg6bfdZk8",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/f3e476d774d3fa95aac2dc349cc973f5be05f111",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/2ea0ed449cd789b419117d2ceba115c0e99acfdc",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d889f7fa9bf645dfebc2da960c91a4bd4eb03249",
+        "width" : 64
+      } ],
+      "name" : "Kirk Franklin (In the Style of Hello Fear) [Karaoke Version] - Single",
+      "type" : "album",
+      "uri" : "spotify:album:2q3EpnhOUqrwbHg6bfdZk8"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7HeCM9ZXhRHUU0yeMnMYq1"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7HeCM9ZXhRHUU0yeMnMYq1",
+        "id" : "7HeCM9ZXhRHUU0yeMnMYq1",
+        "name" : "Fruition Music Inc.",
+        "type" : "artist",
+        "uri" : "spotify:artist:7HeCM9ZXhRHUU0yeMnMYq1"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/32a6AOLSP9vDxDlKWCJudt"
+      },
+      "href" : "https://api.spotify.com/v1/albums/32a6AOLSP9vDxDlKWCJudt",
+      "id" : "32a6AOLSP9vDxDlKWCJudt",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3c1486b74141a37924ee61c4af1bb3aea2cc03e5",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/47168ad34691fed0d5cda79cfcc8bb1216e8920c",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7708bd6780bb65301bc8a460f642880cdb2fdfd5",
+        "width" : 64
+      } ],
+      "name" : "Brighter Day (Originally Performed by Kirk Franklin) [Instrumental Versions]",
+      "type" : "album",
+      "uri" : "spotify:album:32a6AOLSP9vDxDlKWCJudt"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0UY7EBV2ScS19NHodxcCvB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0UY7EBV2ScS19NHodxcCvB",
+        "id" : "0UY7EBV2ScS19NHodxcCvB",
+        "name" : "Fruition Music Inc",
+        "type" : "artist",
+        "uri" : "spotify:artist:0UY7EBV2ScS19NHodxcCvB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6wEwR12K8bGE4Q7Z90vHsF"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6wEwR12K8bGE4Q7Z90vHsF",
+      "id" : "6wEwR12K8bGE4Q7Z90vHsF",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/507a0e6decbbea39ad5f84164803b1ea3572d224",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/dd74d9cc9790f753f39822b44f9ff76c89137e12",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/8cfd8d032ac2b1b07b3c96f7163ab0d984189e94",
+        "width" : 64
+      } ],
+      "name" : "Melodies from Heaven (Originally Performed by Kirk Franklin) [Instrumental Version]",
+      "type" : "album",
+      "uri" : "spotify:album:6wEwR12K8bGE4Q7Z90vHsF"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0UY7EBV2ScS19NHodxcCvB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0UY7EBV2ScS19NHodxcCvB",
+        "id" : "0UY7EBV2ScS19NHodxcCvB",
+        "name" : "Fruition Music Inc",
+        "type" : "artist",
+        "uri" : "spotify:artist:0UY7EBV2ScS19NHodxcCvB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1DYr0YWqjS7j035xP2YewV"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1DYr0YWqjS7j035xP2YewV",
+      "id" : "1DYr0YWqjS7j035xP2YewV",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/cee167796d1b7242a7a3b4732c5b3eb71e0c51b6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/015abb9ddcdcd30cb666637d59553f720df2617b",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/a18bc1b897b0da735cf6e878ad5b9070fd934c92",
+        "width" : 64
+      } ],
+      "name" : "My Life Is in Your Hands (Originally Performed by Kirk Franklin) [Instrumental Performance Tracks]",
+      "type" : "album",
+      "uri" : "spotify:album:1DYr0YWqjS7j035xP2YewV"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0UY7EBV2ScS19NHodxcCvB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0UY7EBV2ScS19NHodxcCvB",
+        "id" : "0UY7EBV2ScS19NHodxcCvB",
+        "name" : "Fruition Music Inc",
+        "type" : "artist",
+        "uri" : "spotify:artist:0UY7EBV2ScS19NHodxcCvB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4wtNhqfOrjOWN1DdvJ6Z3D"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4wtNhqfOrjOWN1DdvJ6Z3D",
+      "id" : "4wtNhqfOrjOWN1DdvJ6Z3D",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/383dff0178c50853d83514a5cc2eb09d027deb85",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/29711835d097aaf9ef1e2b296ae2f2f5ef7e6317",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/30139df7f6af7354e7e6358814b195f5bfc02207",
+        "width" : 64
+      } ],
+      "name" : "Something About the Name Jesus (Originally Performed by Kirk Franklin) [Instrumental Performance Tracks]",
+      "type" : "album",
+      "uri" : "spotify:album:4wtNhqfOrjOWN1DdvJ6Z3D"
     } ],
-    "limit" : 12,
-    "next" : "https://api.spotify.com/v1/search?query=Kirk+Franklin&type=album&offset=12&limit=12",
+    "limit" : 50,
+    "next" : null,
     "offset" : 0,
     "previous" : null,
     "total" : 45
+  },
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=kirk+franklin&type=artist&offset=0&limit=50",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4akybxRTGHJZ1DXjLhJ1qu"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 235510
+      },
+      "genres" : [ "christian christmas", "gospel", "neo soul", "r&b" ],
+      "href" : "https://api.spotify.com/v1/artists/4akybxRTGHJZ1DXjLhJ1qu",
+      "id" : "4akybxRTGHJZ1DXjLhJ1qu",
+      "images" : [ {
+        "height" : 421,
+        "url" : "https://i.scdn.co/image/0ffbf26c0e3a67bf863c47b1f80b394113a2ba64",
+        "width" : 636
+      }, {
+        "height" : 132,
+        "url" : "https://i.scdn.co/image/a1e4dcdafb7f11e08edd5de1c3b1227ce08bd4de",
+        "width" : 199
+      }, {
+        "height" : 42,
+        "url" : "https://i.scdn.co/image/ae54aada12b90a88c85db9fb9c1490091a99113d",
+        "width" : 63
+      } ],
+      "name" : "Kirk Franklin",
+      "popularity" : 64,
+      "type" : "artist",
+      "uri" : "spotify:artist:4akybxRTGHJZ1DXjLhJ1qu"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6bUP8NEnriCT6Uyqo5gOct"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 316
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6bUP8NEnriCT6Uyqo5gOct",
+      "id" : "6bUP8NEnriCT6Uyqo5gOct",
+      "images" : [ ],
+      "name" : "Kirk Franklin & Mary Mary",
+      "popularity" : 10,
+      "type" : "artist",
+      "uri" : "spotify:artist:6bUP8NEnriCT6Uyqo5gOct"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1ezs3YptaftNFvR9h62jzC"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 308
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1ezs3YptaftNFvR9h62jzC",
+      "id" : "1ezs3YptaftNFvR9h62jzC",
+      "images" : [ ],
+      "name" : "Kirk Franklin and family",
+      "popularity" : 6,
+      "type" : "artist",
+      "uri" : "spotify:artist:1ezs3YptaftNFvR9h62jzC"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1O6Dsp61rF0wJRebkppsC2"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 536
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1O6Dsp61rF0wJRebkppsC2",
+      "id" : "1O6Dsp61rF0wJRebkppsC2",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/49d720aa6b221d1d8636d2d07ef537acdfd2ca61",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/a1651c221f0c473917edc401f714d3e32c74b8db",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/59bcc2d99a21743220864f45494b42d4a4447a12",
+        "width" : 64
+      } ],
+      "name" : "Kirk Franklin Presents Artists United For Haiti",
+      "popularity" : 11,
+      "type" : "artist",
+      "uri" : "spotify:artist:1O6Dsp61rF0wJRebkppsC2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3A2KiYk6GNK2XOmEdFEduV"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 60
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3A2KiYk6GNK2XOmEdFEduV",
+      "id" : "3A2KiYk6GNK2XOmEdFEduV",
+      "images" : [ ],
+      "name" : "Kirk Franklin & Jill Scott",
+      "popularity" : 7,
+      "type" : "artist",
+      "uri" : "spotify:artist:3A2KiYk6GNK2XOmEdFEduV"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7r5eFBPPJjFPy2E1K0VQmd"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 17403
+      },
+      "genres" : [ "christian christmas", "gospel" ],
+      "href" : "https://api.spotify.com/v1/artists/7r5eFBPPJjFPy2E1K0VQmd",
+      "id" : "7r5eFBPPJjFPy2E1K0VQmd",
+      "images" : [ ],
+      "name" : "Kirk Franklin & The Family",
+      "popularity" : 6,
+      "type" : "artist",
+      "uri" : "spotify:artist:7r5eFBPPJjFPy2E1K0VQmd"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6Nv2T7gKeKG2rjSvi7TBEL"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 235
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6Nv2T7gKeKG2rjSvi7TBEL",
+      "id" : "6Nv2T7gKeKG2rjSvi7TBEL",
+      "images" : [ ],
+      "name" : "John P. Kee and New Life feat. Kirk Franklin",
+      "popularity" : 11,
+      "type" : "artist",
+      "uri" : "spotify:artist:6Nv2T7gKeKG2rjSvi7TBEL"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/62MLVv3yU767zOLmtCLkXp"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 913
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/62MLVv3yU767zOLmtCLkXp",
+      "id" : "62MLVv3yU767zOLmtCLkXp",
+      "images" : [ ],
+      "name" : "John P. Kee and New Life feat. Kirk Franklin & Fred Hammond",
+      "popularity" : 14,
+      "type" : "artist",
+      "uri" : "spotify:artist:62MLVv3yU767zOLmtCLkXp"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7ob93m8kwhHuJcbpeE5Jlq"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 56
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7ob93m8kwhHuJcbpeE5Jlq",
+      "id" : "7ob93m8kwhHuJcbpeE5Jlq",
+      "images" : [ ],
+      "name" : "Men Of Standard, Kirk Franklin",
+      "popularity" : 2,
+      "type" : "artist",
+      "uri" : "spotify:artist:7ob93m8kwhHuJcbpeE5Jlq"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0lMU85aCRmRk66gPU97Bqb"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 6
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0lMU85aCRmRk66gPU97Bqb",
+      "id" : "0lMU85aCRmRk66gPU97Bqb",
+      "images" : [ ],
+      "name" : "Trinity Temple feat. Kirk Franklin",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0lMU85aCRmRk66gPU97Bqb"
+    } ],
+    "limit" : 50,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 10
   }
 }

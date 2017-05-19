@@ -1,0 +1,26 @@
+=transition($duration)
+  -webkit-transition: $duration
+  -moz-transition: $duration
+  -ms-transition: $duration
+  transition: $duration
+
+=position($type: null, $top: null, $right: null, $bottom: null, $left: null)
+  position: $type
+  top: $top
+  left: $left
+  bottom: $bottom
+  right: $right
+
+=size($width: null, $height: null)
+  width: $width
+  height: $height
+
+=truncate-text()
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+=untruncate-text()
+  white-space: normal
+  overflow: auto
+  text-overflow: clip
