@@ -1,0 +1,56 @@
+search-result
+  .entry
+    +size(26.3rem, 33.0rem)
+    +transition(0.5s)
+    +position(relative)
+    display: inline-block
+    vertical-align: top
+    margin: 0 2.2rem 6rem 0
+    border-radius: 0.4rem
+    cursor: pointer
+    overflow: hidden
+    opacity: 0
+    border: none
+  .entry.loaded
+    opacity: 1
+  .entry:before
+    +position(absolute, $bottom: 7.9rem, $left: 1.5rem)
+    +size(2.5rem, 2.5rem)
+    display: block
+    content: ""
+    background: no-repeat center/cover url("../images/disc_small.png")
+    opacity: 0.3
+    z-index: 2
+  .entry[data-type="artist"]:before
+    background-image: url("../images/artist_small.png")
+  .entry:after
+    +position(absolute, $bottom: 0, $right: 0)
+    +size(calc(100% - 4rem))
+    +truncate-text()
+    padding: 2.3rem 2rem
+    display: block
+    background-color: white
+    color: #2A2A33
+    font: 1.8em/1 $font-montserrat
+    content: attr(data-title)
+  .entry:hover:before, .entry[data-type="artist"]:hover:before
+    +size(15rem, auto)
+    +position(absolute, $top: 8.5rem, $left: 5.2rem)
+    padding-top: 10rem
+    background: no-repeat center top/10rem 8.8rem url("../images/details.png")
+    font: 1.8em/1 $font-raleway
+    color: white
+    opacity: 1
+    content: "View Tracks"
+    text-align: center
+  .entry[data-type="artist"]:hover:before
+    content: "View Albums"
+  .entry:hover:after
+    +untruncate-text()
+  .entry:hover img
+    filter: blur(1rem)
+  img
+    +size(100%, auto)
+    +transition(0.7s)
+  img.horizontal
+    +size(auto, 100%)

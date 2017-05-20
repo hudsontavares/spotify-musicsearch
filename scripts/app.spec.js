@@ -5,8 +5,9 @@ define([
   "require.text!templates/SearchHeader.html",
   "require.text!templates/SearchBox.html",
   "require.text!templates/SearchResults.html",
+  "require.text!templates/SearchResult.html",
   "require.text!templates/SearchFooter.html"
-], function (app, ResultSet, sampleJson, SearchHeaderTemplate, SearchBoxTemplate, SearchResultsTemplate, SearchFooterTemplate) {
+], function (app, ResultSet, sampleJson, SearchHeaderTemplate, SearchBoxTemplate, SearchResultsTemplate, SearchResultTemplate, SearchFooterTemplate) {
 
     beforeEach(module("App"));
 
@@ -122,7 +123,7 @@ define([
       });
     });
 
-    describe("Results directive", function () {
+    describe("SearchResults / SearchResult directives", function () {
       var $compile, $rootScope, $httpBackend, MessageService;
 
       beforeEach( inject(function (_$compile_, _$rootScope_, $injector) {
@@ -132,6 +133,7 @@ define([
         MessageService = $injector.get("MessageService").unregisterAll();
         $httpBackend = $injector.get("$httpBackend");
         $templateCache.put("/scripts/templates/SearchResults.html", SearchResultsTemplate);
+        $templateCache.put("/scripts/templates/SearchResult.html", SearchResultTemplate);
       }));
 
       it("Replaces HTML element", function () {
@@ -141,8 +143,10 @@ define([
         MessageService.trigger("searchbox:search", {"q": "any"});
         $httpBackend.flush();
 
-        var entries = element.find("li");
+        var entries = element.find("search-result");
         expect(entries.length).toBe(55);
+        var sample = entries.eq(0).find("div");
+        expect(sample.length).toBe(1);
       });
     });
 

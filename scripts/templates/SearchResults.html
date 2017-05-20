@@ -1,10 +1,8 @@
 <section ng-class="{results: true, 'loading': searchResults.loader.loading}">
   <div class="loading" ng-bind="searchResults.loader.message"></div>
-  <ul class="search-results loaded">
-    <li ng-repeat="entry in searchResults.resultSet.entries | limitTo: searchResults.resultsShown" ng-class="{'loaded': entry.loaded}" ng-attr-data-type="{{ entry.type }}" ng-attr-data-title="{{ entry.title }}">
-      <img ng-src="{{ entry.image.url || 'images/spotify.svg' }}" ng-load="entry.loaded = true" ng-class="{'horizontal': entry.horizontal}" />
-    </li>
-  </ul>
+  <div class="search-results loaded">
+    <search-result ng-repeat="entry in searchResults.resultSet.entries | limitTo: searchResults.resultsShown" entry="entry"></search-result>
+  </div>
   <div ng-class="{'loaded': true, 'more': true, 'visible': searchResults.hasMore()}">
     <button type="button" ng-click="searchResults.showMore()">Show me more!</button>
   </div>
