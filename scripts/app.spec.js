@@ -6,8 +6,9 @@ define([
   "require.text!templates/SearchBox.html",
   "require.text!templates/SearchResults.html",
   "require.text!templates/SearchResult.html",
-  "require.text!templates/SearchFooter.html"
-], function (app, ResultSet, sampleJson, SearchHeaderTemplate, SearchBoxTemplate, SearchResultsTemplate, SearchResultTemplate, SearchFooterTemplate) {
+  "require.text!templates/SearchFooter.html",
+  "require.text!templates/EntryDetails.html"
+], function (app, ResultSet, sampleJson, SearchHeaderTemplate, SearchBoxTemplate, SearchResultsTemplate, SearchResultTemplate, SearchFooterTemplate, EntryDetailsTemplate) {
 
     beforeEach(module("App"));
 
@@ -168,6 +169,23 @@ define([
         });
         MessageService.trigger("searchbox:search", {"q": "Sample Query"});
         $httpBackend.flush();
+      });
+    });
+
+    describe("EntryDetails directive", function () {
+      var $compile, $rootScope;
+
+      beforeEach( inject(function (_$compile_, _$rootScope_, $injector) {
+        $compile = _$compile_;
+        $rootScope = _$rootScope_;
+        $templateCache = $injector.get("$templateCache");
+        $templateCache.put("/scripts/templates/EntryDetails.html", EntryDetailsTemplate);
+      }));
+
+      it("Replaces HTML element", function () {
+        var element = $compile("<entry-details></entry-details>")($rootScope);
+        $rootScope.$digest();
+        expect(element.html()).toContain("Albums");
       });
     });
 
