@@ -1,0 +1,419 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300|Raleway|Nunito:200");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 10px;
+}
+
+body {
+  transition: 2s;
+  background-color: #333441;
+}
+
+body.with-results {
+  background-color: #383A49;
+}
+
+.viewport {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #D05D84;
+  border: none;
+  border-radius: 3rem;
+  color: white;
+  text-transform: uppercase;
+  padding: 1.2rem 2.8rem;
+  font: 1.4em/1 Raleway, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+@-webkit-keyframes arrow-move {
+  0% {
+    padding-bottom: 0;
+  }
+  50% {
+    padding-bottom: 2rem;
+  }
+  100% {
+    padding-bottom: 0;
+  }
+}
+
+@keyframes arrow-move {
+  0% {
+    padding-bottom: 0;
+  }
+  50% {
+    padding-bottom: 2rem;
+  }
+  100% {
+    padding-bottom: 0;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+search-header {
+  display: block;
+}
+
+.search-header {
+  position: relative;
+  background: linear-gradient(to top, #B3455D, #CD4282);
+  padding: 8.7rem 0;
+  color: white;
+  cursor: pointer;
+}
+
+.search-header #geek-label, .search-header #spotify {
+  position: absolute;
+  cursor: pointer;
+}
+
+.search-header #geek-label {
+  top: 3.6rem;
+  left: 4rem;
+  width: 8.1rem;
+  height: 2.4rem;
+  display: block;
+  background: transparent url("../images/geek_logo.png") no-repeat scroll top center;
+  padding-top: 8.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font: 1.4em/1 "Open Sans", Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.search-header #spotify {
+  top: 4rem;
+  right: 4rem;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 1.6em;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.search-header h1 {
+  position: relative;
+  width: 66.4rem;
+  height: 46.6rem;
+  background: transparent url("../images/music_search.jpg") no-repeat;
+  margin: 0 auto;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.search-header h1:after {
+  position: absolute;
+  left: 50%;
+  bottom: -3.6rem;
+  display: block;
+  color: white;
+  font-size: 2.6rem;
+}
+
+.search-header.visible h1:after {
+  -webkit-animation: arrow-move 3s infinite;
+          animation: arrow-move 3s infinite;
+  content: "↓";
+}
+
+search-box {
+  display: block;
+  background-color: #333441;
+  padding: 1.4rem 0;
+  text-align: center;
+}
+
+search-box form {
+  display: inline-block;
+  background-color: white;
+  border: 0.2rem solid #6c6c6c;
+  border-radius: 3rem;
+  padding: 0.4rem 0.4rem 0.4rem 2.2rem;
+}
+
+search-box form input[type="search"] {
+  width: 34.4em;
+  border: none;
+  font: 1.4em/1.5 Montserrat, Helvetica, sans-serif;
+}
+
+search-results section {
+  display: block;
+}
+
+search-results .results.loading {
+  background-color: #383A49;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+search-results .results.loading .loaded {
+  display: none;
+}
+
+search-results .results.loading .loading {
+  display: block;
+  padding: 28.9rem 0 9.3rem 0;
+  color: #474958;
+  font: 2.2em/1 Raleway, Helvetica, sans-serif;
+  text-align: center;
+  background: no-repeat center 8.9rem/16.9rem 16.3rem url("../images/magnifier.png");
+}
+
+search-results .results {
+  padding: 5.9rem 14.6rem;
+}
+
+search-results .results .loading {
+  display: none;
+}
+
+search-results .results .more {
+  text-align: center;
+  display: none;
+}
+
+search-results .results .more.visible {
+  display: block;
+}
+
+search-result .entry {
+  width: 26.3rem;
+  height: 33rem;
+  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2.2rem 6rem 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  border: none;
+}
+
+search-result .entry.loaded {
+  opacity: 1;
+}
+
+search-result .entry:before {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 7.9rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  content: "";
+  background: no-repeat center/cover url("../images/disc_small.png");
+  opacity: 0.3;
+  z-index: 2;
+}
+
+search-result .entry[data-type="artist"]:before {
+  background-image: url("../images/artist_small.png");
+}
+
+search-result .entry:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 4rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2.3rem 2rem;
+  display: block;
+  background-color: white;
+  color: #2A2A33;
+  font: 1.8em/1 Montserrat, Helvetica, sans-serif;
+  content: attr(data-title);
+}
+
+search-result .entry:hover:before, search-result .entry[data-type="artist"]:hover:before {
+  width: 15rem;
+  height: auto;
+  position: absolute;
+  top: 8.5rem;
+  left: 5.2rem;
+  padding-top: 10rem;
+  background: no-repeat center top/10rem 8.8rem url("../images/details.png");
+  font: 1.8em/1 Raleway, Helvetica, sans-serif;
+  color: white;
+  opacity: 1;
+  content: "View Tracks";
+  text-align: center;
+}
+
+search-result .entry[data-type="artist"]:hover:before {
+  content: "View Albums";
+}
+
+search-result .entry:hover:after {
+  white-space: normal;
+  overflow: auto;
+  text-overflow: clip;
+}
+
+search-result .entry:hover img {
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+}
+
+search-result img {
+  width: 100%;
+  height: auto;
+  transition: 0.7s;
+}
+
+search-result img.horizontal {
+  width: auto;
+  height: 100%;
+}
+
+entry-details .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(51, 52, 65, 0.5);
+  z-index: 3;
+  display: none;
+}
+
+entry-details .overlay.show {
+  -webkit-animation: 1s fade-in 1;
+          animation: 1s fade-in 1;
+  display: block;
+}
+
+entry-details .entry {
+  width: 75rem;
+  height: 90vh;
+  display: block;
+  margin: 5vh auto;
+  overflow-y: scroll;
+  background-color: white;
+  position: relative;
+}
+
+entry-details .entry header {
+  width: 75rem;
+  height: 32.2rem;
+  position: fixed;
+  display: block;
+  overflow: hidden;
+}
+
+entry-details .entry header:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 52, 65, 0.5);
+  content: "";
+}
+
+entry-details .entry header img {
+  width: 100%;
+}
+
+entry-details .entry header h2 {
+  position: absolute;
+  left: 3rem;
+  bottom: 3.8rem;
+  font: 3em/1 Montserrat, Helvetica, sans-serif;
+  color: white;
+}
+
+entry-details .entry header .close {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font: 3rem Nunito, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+entry-details .entry .albums {
+  padding: 35.2rem 3rem 3rem;
+}
+
+entry-details .entry .albums h2 {
+  font: 2em/1 Montserrat, Helvetica, sans-serif;
+  color: #2A2A33;
+  border-bottom: 0.1rem solid #ddd;
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+entry-details .entry .albums img {
+  width: 10rem;
+  vertical-align: top;
+  float: left;
+  margin-right: 2rem;
+}
+
+entry-details .entry .albums li {
+  list-style: none;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+}
+
+entry-details .entry .albums li:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+entry-details .entry .albums .title, entry-details .entry .albums .year {
+  font: 2em/1 Montserrat, Helvetica, sans-serif;
+  display: block;
+}
+
+entry-details .entry .albums .title {
+  color: #2A2A33;
+  padding: 1.5rem 0 2rem 0;
+}
+
+entry-details .entry .albums .year {
+  font-size: 1.4em;
+  color: #8E8F9C;
+}
+
+search-footer footer {
+  background-color: #333441;
+  font: 1.6em/1 Raleway, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  padding: 3.5rem 0;
+}
