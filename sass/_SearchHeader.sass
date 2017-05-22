@@ -14,12 +14,9 @@ search-header
 
   #geek-label
     +position($top: 3.6rem, $left: 4rem)
-    +size(8.1rem, 2.4rem)
+    +size(8rem, 10rem)
     display: block
-    background: transparent url("../images/geek_logo.png") no-repeat scroll top center
-    padding-top: 8.5rem
-    letter-spacing: 0.1rem
-    text-align: center
+    background: no-repeat center top/cover url("../images/geek_logo.png")
     font: 1.4em/1 $font-open-sans
     color: white
     text-decoration: none
@@ -36,17 +33,19 @@ search-header
   h1
     +position(relative)
     +size(66.4rem, 46.6rem)
-    background: transparent url("../images/music_search.jpg") no-repeat
+    background: no-repeat center top/cover url("../images/music_search.png")
     margin: 0 auto
     font-family: $font-open-sans
     font-weight: lighter
 
   h1:after
     +position(absolute, $bottom: -3.6rem, $left: 50%)
+    +size(4.3rem, 5.6rem)
+    background: no-repeat center top/cover url("../images/arrow_down.png")
     display: block
     color: white
     font-size: 2.6rem
 
   &.visible h1:after
     animation: arrow-move 3s infinite
-    content: "↓"
+    content: ""
