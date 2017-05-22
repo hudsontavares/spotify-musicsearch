@@ -1,7 +1,7 @@
 define (["controllers/SearchFooter"], function (SearchFooterController) {
     var SearchFooter = {
       "restrict": "E",
-      "templateUrl": "/scripts/templates/SearchFooter.html",
+      "templateUrl": "./scripts/templates/SearchFooter.html",
       "controller": SearchFooterController,
       "controllerAs": "searchFooter",
       "bindToController": true

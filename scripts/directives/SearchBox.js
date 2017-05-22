@@ -1,7 +1,7 @@
 define (["controllers/SearchBox"], function (SearchBoxController) {
     var SearchBox = {
       "restrict": "E",
-      "templateUrl": "/scripts/templates/SearchBox.html",
+      "templateUrl": "./scripts/templates/SearchBox.html",
       "controller": SearchBoxController,
       "controllerAs": "searchBox",
       "bindToController": true,

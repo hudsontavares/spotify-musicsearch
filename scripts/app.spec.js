@@ -153,7 +153,7 @@ define([
         $compile = _$compile_;
         $rootScope = _$rootScope_;
         $templateCache = $injector.get("$templateCache");
-        $templateCache.put("/scripts/templates/SearchHeader.html", SearchHeaderTemplate);
+        $templateCache.put("./scripts/templates/SearchHeader.html", SearchHeaderTemplate);
       }));
 
       it("Replaces HTML element", function () {
@@ -170,7 +170,7 @@ define([
         $compile = _$compile_;
         $rootScope = _$rootScope_;
         $templateCache = $injector.get("$templateCache");
-        $templateCache.put("/scripts/templates/SearchBox.html", SearchBoxTemplate);
+        $templateCache.put("./scripts/templates/SearchBox.html", SearchBoxTemplate);
       }));
 
       it("Replaces HTML element", function () {
@@ -211,8 +211,8 @@ define([
         $rootScope = _$rootScope_;
         $templateCache = $injector.get("$templateCache");
         $httpBackend = $injector.get("$httpBackend");
-        $templateCache.put("/scripts/templates/SearchResults.html", SearchResultsTemplate);
-        $templateCache.put("/scripts/templates/SearchResult.html", SearchResultTemplate);
+        $templateCache.put("./scripts/templates/SearchResults.html", SearchResultsTemplate);
+        $templateCache.put("./scripts/templates/SearchResult.html", SearchResultTemplate);
       }));
 
       it("Replaces HTML element", function () {
@@ -258,7 +258,7 @@ define([
         $compile = _$compile_;
         $rootScope = _$rootScope_;
         $templateCache = $injector.get("$templateCache");
-        $templateCache.put("/scripts/templates/EntryDetails.html", EntryDetailsTemplate);
+        $templateCache.put("./scripts/templates/EntryDetails.html", EntryDetailsTemplate);
       }));
 
       it("Replaces HTML element", function () {
@@ -350,7 +350,7 @@ define([
         $compile = _$compile_;
         $rootScope = _$rootScope_;
         $templateCache = $injector.get("$templateCache");
-        $templateCache.put("/scripts/templates/SearchFooter.html", SearchFooterTemplate);
+        $templateCache.put("./scripts/templates/SearchFooter.html", SearchFooterTemplate);
       }));
 
       it("Replaces HTML element", function () {

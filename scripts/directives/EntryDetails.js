@@ -1,7 +1,7 @@
 define (["controllers/EntryDetails"], function (EntryDetailsController) {
     var EntryDetails = {
       "restrict": "E",
-      "templateUrl": "/scripts/templates/EntryDetails.html",
+      "templateUrl": "./scripts/templates/EntryDetails.html",
       "controller": EntryDetailsController,
       "controllerAs": "entryDetails",
       "bindToController": true

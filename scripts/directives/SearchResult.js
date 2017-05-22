@@ -1,7 +1,7 @@
 define ([], function () {
     var SearchResult = {
       "restrict": "E",
-      "templateUrl": "/scripts/templates/SearchResult.html",
+      "templateUrl": "./scripts/templates/SearchResult.html",
       "scope": {
         "entry": "=",
         "type": "@type",

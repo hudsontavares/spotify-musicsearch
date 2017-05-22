@@ -1,7 +1,7 @@
 define (["controllers/SearchResults"], function (SearchResultsController) {
     var SearchResults = {
       "restrict": "E",
-      "templateUrl": "/scripts/templates/SearchResults.html",
+      "templateUrl": "./scripts/templates/SearchResults.html",
       "scope": {
         "resultsPerPage": "@resultsPerPage"
       },
