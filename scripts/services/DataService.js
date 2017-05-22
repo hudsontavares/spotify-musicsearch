@@ -27,9 +27,7 @@ define(["models/ResultSet", "models/ResultEntry"], function (ResultSet, ResultEn
           }
         })
         .then( function (response) {
-          _this.albums(response.data.items.map ( function (item) {
-            return item.id;
-          }), success, failure);
+          success(response.data.items);
           return true;
         }, failure);
       };

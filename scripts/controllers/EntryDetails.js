@@ -8,7 +8,7 @@ define(["utils/index"], function (Utils) {
     this.unset = function (event) {
       Utils.preventEvent(event);
       MessageService.trigger("entry:details:clear");
-      return this;
+      return _this;
     };
 
     this.openExternal = function (entry) {
@@ -21,13 +21,32 @@ define(["utils/index"], function (Utils) {
         return _this;
       }
 
-      DataService.artistAlbums(entry, function (entries) {
-        _this.entry = entry;
-        _this.details = entries;
-      }, function (error) {
-        /* TODO: error treatment */
-        console.log(error);
+      var ids = [];
+
+      DataService.artistAlbums(
+        entry,
+        function (entries) {
+          ids = entries.map( function (item) {
+            return item.id;
+          });
+        },
+        function (error) {
+          /* TODO: error treatment */
+          console.log(error);
+        }
+      ).then( function () {
+        DataService.albums(
+          ids,
+          function (entries) {
+            MessageService.trigger("entry:details:done", _this.entry = entry, _this.details = entries);
+          },
+          function (error) {
+            /* TODO: error treatment */
+            console.log(error);
+          }
+        );
       });
+
       return _this;
     });
 
@@ -45,8 +64,9 @@ define(["utils/index"], function (Utils) {
 
   /* Assigns directive to an app instance */
   EntryDetails.assign = function (app) {
-    return app.controller("EntryDetailsController", function (MessageService, DataService) {
-      return new _this(MessageService, DataService);
+    var _this = this;
+    return app.controller("EntryDetailsController", function (MessageService, DataService, $window) {
+      return new _this(MessageService, DataService, $window);
     });
   };
 

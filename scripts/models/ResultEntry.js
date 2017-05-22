@@ -14,7 +14,7 @@ define([], function () {
     this.title = source.name;
     this.image = hasEntries(source.images)? source.images[0] : {
       "url": "images/spotify.svg",
-      "width": 640,
+      "width": 470,
       "height": 480
     };
     this.id = source.id;

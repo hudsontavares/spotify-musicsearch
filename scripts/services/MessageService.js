@@ -13,16 +13,23 @@ define(["models/EventListener"], function (EventListener) {
 
     /* Retrieves all listeners for the specified event */
     this.listeners = function (event) {
-      return typeof (listeners[event]) !== null ? listeners[event] : [];
+      return typeof (listeners[event]) !== "undefined" ? listeners[event] : [];
     }
 
-    /* Removes specified event */
-    this.unregister = function (listener) {
-      if (typeof(listeners[listener.event]) !== "undefined") {
-        var index = listeners[listener.event].indexOf(listener);
-        if (index !== -1)
-          listeners[listener.event].splice(index, 1);
+    /* Removes specified events list */
+    this.unregister = function (list) {
+      if (!Array.isArray(list))
+        list = [list];
+
+      for (var counter = 0, size = list.length; counter < size; counter++) {
+        var listener = list[counter];
+        if (typeof(listeners[listener.event]) !== "undefined") {
+          var index = listeners[listener.event].indexOf(listener);
+          if (index !== -1)
+            listeners[listener.event].splice(index, 1);
+        }
       }
+
       return this;
     }
 
