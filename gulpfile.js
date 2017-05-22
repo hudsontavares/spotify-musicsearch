@@ -25,6 +25,8 @@ gulp.task("test", function (done) {
   server.start();
 });
 
-gulp.task("default", function() {
+gulp.task("watch", ["sass"], function () {
   gulp.watch("./sass/**/*.sass", ["sass"]);
 });
+
+gulp.task("default", ["watch"]);

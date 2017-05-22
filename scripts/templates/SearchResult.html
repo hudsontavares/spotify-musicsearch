@@ -1,3 +1,3 @@
 <div ng-class="{'search-results': true, 'entry': true, 'loaded': entry.loaded}" ng-attr-data-type="{{ entry.type }}" ng-attr-data-title="{{ entry.title }}">
-  <img ng-src="{{ entry.image.url || 'images/spotify.svg' }}" ng-load="entry.loaded = true" ng-class="{'horizontal': entry.horizontal}" />
+  <img ng-src="{{ entry.image.url }}" ng-load="entry.loaded = true" ng-class="{'horizontal': entry.horizontal}" />
 </div>

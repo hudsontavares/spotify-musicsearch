@@ -51,7 +51,7 @@ define([
       });
 
       it ("Digests Spotify API data properly", function (done) {
-        DataService.get({
+        DataService.search({
           "q": "Kirk Franklin",
           "type": "album"
         },

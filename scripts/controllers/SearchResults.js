@@ -15,7 +15,7 @@ define (["utils/index"], function (Utils) {
     };
 
     var SearchResults = function (MessageService, DataService) {
-      var ref = this;
+      var _this = this;
 
       this.resultSet = null;
       this.loader = new Loader(true, "Your results will appear here");
@@ -33,23 +33,30 @@ define (["utils/index"], function (Utils) {
         return this;
       };
 
+      this.showDetails = function (entry) {
+        MessageService.trigger("entry:details", entry);
+        return this;
+      }
+
       MessageService.register(
         "searchbox:search",
         function (params) {
-          ref.loader.set("Loading data, please wait...");
-          ref.resultsShown = ref.resultsPerPage;
-          DataService.get(params, function (resultSet) {
-          MessageService.trigger("searchbox:results", ref.resultSet = resultSet, this.resultsPerPage);
-          if (ref.resultSet.entries.length === 0) {
-            ref.loader.message = "No results found.";
+          _this.loader.set("Loading data, please wait...");
+          _this.resultsShown = _this.resultsPerPage;
+          if (_this.resultSet !== null)
+            _this.resultSet.entries = [];
+          DataService.search(params, function (resultSet) {
+          MessageService.trigger("searchbox:results", _this.resultSet = resultSet, _this.resultsPerPage);
+          if (_this.resultSet.entries.length === 0) {
+            _this.loader.message = "No results found.";
             return;
           }
           Utils.addClass(document.body, "with-results");
-          ref.loader.unset();
+          _this.loader.unset();
         },
         function (error) {
           Utils.removeClass(document.body, "with-results");
-          return ref.loader.set(error);
+          return _this.loader.set(error);
         }
       );
       });
@@ -60,9 +67,9 @@ define (["utils/index"], function (Utils) {
 
     /* Assigns directive to an app instance */
     SearchResults.assign = function (app) {
-      var ref = this;
+      var _this = this;
       return app.controller("SearchResultsController", function (MessageService, DataService) {
-        return new ref(MessageService, DataService);
+        return new _this(MessageService, DataService);
       });
     };
 

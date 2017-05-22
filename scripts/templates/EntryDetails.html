@@ -1,0 +1,21 @@
+<div ng-class="{'overlay': true, 'show': entryDetails.entry !== null}">
+  <section class="entry">
+    <header>
+      <img ng-src="{{ entryDetails.entry.image.url }}" ng-attr-alt="entryDetails.entry.title" />
+      <h2 ng-bind="entryDetails.entry.title"></h2>
+      <a href="#" class="close" ng-click="entryDetails.unset($event)">X</a>
+    </header>
+    <div class="albums">
+      <h2>Albums</h2>
+      <ul>
+        <li ng-repeat="detail in entryDetails.details" ng-click="entryDetails.openExternal(detail)">
+          <img ng-src="{{ detail.image.url }}" alt="{{ detail.title }}" />
+          <div class="holder">
+            <span class="title" ng-bind="detail.title"></span>
+            <span class="year" ng-bind="detail.release_year"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>

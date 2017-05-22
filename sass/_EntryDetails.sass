@@ -1,0 +1,68 @@
+entry-details
+  .overlay
+    +position(fixed, $top: 0, $left: 0)
+    +size(100vw, 100vh)
+    background-color: rgba(51, 52, 65, 0.5)
+    z-index: 3
+    display: none
+  .overlay.show
+    animation: 1s fade-in 1
+    display: block
+  .entry
+    +size(75rem, 90vh)
+    display: block
+    margin: 5vh auto
+    overflow-y: scroll
+    background-color: white
+    position: relative
+    header
+      +size(75rem, 32.2rem)
+      +position(fixed)
+      display: block
+      overflow: hidden
+      &:before
+        +position(absolute, $top: 0, $left: 0)
+        +size(100%, 100%)
+        background-color: rgba(51, 52, 65, 0.5)
+        content: ""
+      img
+        width: 100%
+      h2
+        +position(absolute, $bottom: 3.8rem, $left: 3rem)
+        font: 3em/1 $font-montserrat
+        color: white
+      .close
+        +position(absolute, $top: 3rem, $right: 3rem)
+        font: 3rem $font-nunito
+        color: white
+        text-decoration: none
+    .albums
+      padding: 35.2rem 3rem 3rem
+      h2
+        font: 2em/1 $font-montserrat
+        color: #2A2A33
+        border-bottom: 0.1rem solid #ddd
+        padding-bottom: 2rem
+        margin-bottom: 2.5rem
+      img
+        +size(10rem)
+        vertical-align: top
+        float: left
+        margin-right: 2rem
+      li
+        list-style: none
+        margin-bottom: 2.5rem
+        cursor: pointer
+        &:after
+          clear: both
+          display: block
+          content: ""
+      .title, .year
+        font: 2em/1 $font-montserrat
+        display: block
+      .title
+        color: #2A2A33
+        padding: 1.5rem 0 2rem 0
+      .year
+        font-size: 1.4em
+        color: #8E8F9C

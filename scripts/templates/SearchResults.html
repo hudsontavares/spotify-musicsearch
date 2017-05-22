@@ -1,7 +1,7 @@
 <section ng-class="{results: true, 'loading': searchResults.loader.loading}">
   <div class="loading" ng-bind="searchResults.loader.message"></div>
   <div class="search-results loaded">
-    <search-result ng-repeat="entry in searchResults.resultSet.entries | limitTo: searchResults.resultsShown" entry="entry"></search-result>
+    <search-result ng-repeat="entry in searchResults.resultSet.entries | limitTo: searchResults.resultsShown" entry="entry" ng-click="searchResults.showDetails(entry)"></search-result>
   </div>
   <div ng-class="{'loaded': true, 'more': true, 'visible': searchResults.hasMore()}">
     <button type="button" ng-click="searchResults.showMore()">Show me more!</button>
