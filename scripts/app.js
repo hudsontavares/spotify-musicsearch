@@ -7,6 +7,7 @@ define([
   "directives/SearchResult",
   "directives/EntryDetails",
   "directives/SearchFooter",
+  "controllers/SearchHeader",
   "controllers/SearchBox",
   "controllers/SearchResults",
   "controllers/EntryDetails",
@@ -20,6 +21,7 @@ define([
   SearchResult,
   EntryDetails,
   SearchFooter,
+  SearchHeaderController,
   SearchBoxController,
   SearchResultsController,
   EntryDetailsController
@@ -40,6 +42,7 @@ define([
   SearchFooter.assign(app);
 
   /* Controllers assignment */
+  SearchHeaderController.assign(app);
   SearchBoxController.assign(app);
   SearchResultsController.assign(app);
   EntryDetailsController.assign(app);

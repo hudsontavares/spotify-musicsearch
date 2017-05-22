@@ -1,5 +1,5 @@
-<header class="search-header">
+<header ng-class="{'search-header': true, 'visible': searchHeader.visible}">
   <a href="http://www.geeklabel.com" target="_blank" id="geek-label">Geek Label</a>
-  <h1><!-- Music Search --></h1>
+  <h1 ng-click="searchHeader.notify($event)"><!-- Music Search --></h1>
   <a href="https://www.spotify.com" target="_blank" id="spotify">Powered by Spotify</a>
 </header>

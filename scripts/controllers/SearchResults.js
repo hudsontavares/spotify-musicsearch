@@ -36,7 +36,12 @@ define (["utils/index"], function (Utils) {
       this.showDetails = function (entry) {
         MessageService.trigger("entry:details", entry);
         return this;
-      }
+      };
+
+      this.focus = function () {
+        Utils.scrollTo($element);
+        return this;
+      };
 
       MessageService.register(
         "searchbox:search",
@@ -53,6 +58,7 @@ define (["utils/index"], function (Utils) {
           }
           Utils.addClass(document.body, "with-results");
           _this.loader.unset();
+          MessageService.trigger("searchresults:render");
         },
         function (error) {
           Utils.removeClass(document.body, "with-results");

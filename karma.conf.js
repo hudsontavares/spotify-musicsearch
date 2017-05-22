@@ -9,6 +9,7 @@ module.exports = function(config) {
       {pattern: "angular-mocks.js", included: true},
       {pattern: "ng-load.js", included: false},
       {pattern: "require.text.js", included: false},
+      {pattern: "jquery.js", included: false},
       {pattern: "tests/*.json", included: false},
       {pattern: "controllers/*.js", included: false},
       {pattern: "directives/*.js", included: false},

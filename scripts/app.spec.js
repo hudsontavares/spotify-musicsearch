@@ -124,6 +124,25 @@ define([
       });
     });
 
+    describe("SearchHeader controller", function () {
+      var $controller, targetController = "SearchHeaderController";
+
+      beforeEach( inject(function (_$controller_, $injector) {
+        $controller = _$controller_;
+      }));
+
+      it("Triggers click notification", function (done) {
+        var eventName = "searchheader:notify:click";
+        MessageService.register(eventName, function (event) {
+          expect(typeof(event) === "undefined").toBe(true);
+          done();
+        });
+        var controller = $controller(targetController, { "$scope" : {} });
+        controller.notify();
+        MessageService.unregister(eventName);
+      });
+    });
+
     describe("SearchHeader directive", function () {
       var $compile, $rootScope;
 

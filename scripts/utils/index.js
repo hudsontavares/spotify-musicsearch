@@ -1,4 +1,5 @@
-define([], function () {
+define(["jquery"], function ($) {
+
   var Utils = {
     "preventEvent": function (event) {
       if (typeof(event) === "undefined")
@@ -7,20 +8,27 @@ define([], function () {
       event.stopPropagation();
     },
     "addClass": function (element, className) {
-      var classes = element.className.split(' ').filter( function (item) {
-        return item !== "";
-      }), index = classes.indexOf(className);
-      if (index === -1)
-        classes.push(className);
-      return element.className = classes.join(' ');
+      return $(element).addClass(className)[0].className;
     },
     "removeClass": function (element, className) {
-      var classes = element.className.split(' ').filter( function (item) {
-        return item !== "";
-      }), index = classes.indexOf(className);
-      if (index !== -1)
-        classes.splice(index, 1);
-      return element.className = classes.join(' ');
+      return $(element).removeClass(className)[0].className;
+    },
+    "isVisibleAt": function (element, $window) {
+      var markers = {
+        "window": {
+          "top": $window.scrollY,
+          "bottom": $window.scrollY + $window.innerHeight
+        },
+        "element": {
+          "top": element.getBoundingClientRect().top,
+          "bottom": element.getBoundingClientRect().bottom
+        }
+      };
+      return markers.element.top >= markers.window.top;
+    },
+    "scrollTo": function (element) {
+      var target = $(element);
+      $("body").animate({"scrollTop": target.offset().top});
     }
   };
 

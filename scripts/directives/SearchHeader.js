@@ -1,7 +1,10 @@
-define ([], function () {
+define (["controllers/SearchHeader"], function (SearchHeaderController) {
     var SearchHeader = {
       "restrict": "E",
-      "templateUrl": "/scripts/templates/SearchHeader.html"
+      "templateUrl": "/scripts/templates/SearchHeader.html",
+      "controller": SearchHeaderController,
+      "controllerAs": "searchHeader",
+      "bindToController": true
     };
 
     /* Dependencies injection */
