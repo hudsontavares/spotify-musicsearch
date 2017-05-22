@@ -15,9 +15,9 @@ define (["controllers/SearchResults"], function (SearchResultsController) {
 
     /* Assigns directive to an app instance */
     SearchResults.assign = function (app) {
-      var ref = this;
+      var _this = this;
       return app.directive("searchResults", function () {
-        return ref;
+        return _this;
       });
     };
 

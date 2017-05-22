@@ -30,9 +30,9 @@ define (["utils/index"], function (Utils) {
 
     /* Assigns directive to an app instance */
     SearchBox.assign = function (app) {
-      var ref = this;
+      var _this = this;
       return app.controller("SearchBoxController", function (MessageService, $window) {
-        return new ref(MessageService, $window);
+        return new _this(MessageService, $window);
       });
     };
 

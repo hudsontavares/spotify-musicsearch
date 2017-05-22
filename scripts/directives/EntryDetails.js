@@ -12,9 +12,9 @@ define (["controllers/EntryDetails"], function (EntryDetailsController) {
 
     /* Assigns directive to an app instance */
     EntryDetails.assign = function (app) {
-      var ref = this;
+      var _this = this;
       return app.directive("entryDetails", function () {
-        return ref;
+        return _this;
       });
     };
 

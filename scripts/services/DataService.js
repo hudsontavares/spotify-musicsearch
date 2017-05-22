@@ -57,9 +57,9 @@ define(["models/ResultSet", "models/ResultEntry"], function (ResultSet, ResultEn
 
     /* Assigns service an app instance */
     DataService.assign = function (app) {
-      var ref = this;
+      var _this = this;
       return app.factory("DataService", function ($http) {
-        return new ref($http);
+        return new _this($http);
       });
     };
 

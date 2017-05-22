@@ -14,9 +14,9 @@ define ([], function () {
 
     /* Assigns directive to an app instance */
     SearchResult.assign = function (app) {
-      var ref = this;
+      var _this = this;
       return app.directive("searchResult", function () {
-        return ref;
+        return _this;
       });
     };
 

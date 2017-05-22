@@ -13,9 +13,9 @@ define (["controllers/SearchBox"], function (SearchBoxController) {
 
     /* Assigns directive to an app instance */
     SearchBox.assign = function (app) {
-      var ref = this;
+      var _this = this;
       return app.directive("searchBox", function () {
-        return ref;
+        return _this;
       });
     };
 

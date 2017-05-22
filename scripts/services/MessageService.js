@@ -59,9 +59,9 @@ define(["models/EventListener"], function (EventListener) {
 
   /* Assigns service an app instance */
   MessageService.assign = function (app) {
-    var ref = this;
+    var _this = this;
     return app.factory("MessageService", function () {
-      return new ref();
+      return new _this();
     });
   };
 

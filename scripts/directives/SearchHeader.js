@@ -9,9 +9,9 @@ define ([], function () {
 
     /* Assigns directive to an app instance */
     SearchHeader.assign = function (app) {
-      var ref = this;
+      var _this = this;
       return app.directive("searchHeader", function () {
-        return ref;
+        return _this;
       });
     };
 
