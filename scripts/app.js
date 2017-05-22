@@ -11,6 +11,7 @@ define([
   "controllers/SearchBox",
   "controllers/SearchResults",
   "controllers/EntryDetails",
+  "controllers/SearchFooter",
   "ng-load"
 ], function (
   DataService,
@@ -24,7 +25,8 @@ define([
   SearchHeaderController,
   SearchBoxController,
   SearchResultsController,
-  EntryDetailsController
+  EntryDetailsController,
+  SearchFooterController
   ) {
 
   var app = angular.module("App", ['ngLoad']);
@@ -46,6 +48,7 @@ define([
   SearchBoxController.assign(app);
   SearchResultsController.assign(app);
   EntryDetailsController.assign(app);
+  SearchFooterController.assign(app);
 
   return app;
 });

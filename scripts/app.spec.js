@@ -137,7 +137,10 @@ define([
           expect(typeof(event) === "undefined").toBe(true);
           done();
         });
-        var controller = $controller(targetController, { "$scope" : {} });
+        var controller = $controller(targetController, {
+          "$scope" : {},
+          "$element": {}
+        });
         controller.notify();
         MessageService.unregister(eventName);
       });
@@ -191,7 +194,10 @@ define([
           expect(typeof(params) === "object").toBe(true);
           done();
         });
-        var controller = $controller(targetController, { "$scope" : {} });
+        var controller = $controller(targetController, {
+          "$scope" : {},
+          "$element": {}
+        });
         controller.search();
         MessageService.unregister(eventName);
       });
@@ -312,6 +318,28 @@ define([
           $httpBackend.expect("GET", /\/v1\/albums/gi).respond(JSON.parse(detailsJson));
           $httpBackend.flush();
           $httpBackend.resetExpectations();
+      });
+    });
+
+    describe("SearchFooter controller", function () {
+      var $controller, targetController = "SearchFooterController";
+
+      beforeEach( inject(function (_$controller_, $injector) {
+        $controller = _$controller_;
+      }));
+
+      it("Triggers click notification", function (done) {
+        var eventName = "searchfooter:to-top";
+        MessageService.register(eventName, function (event) {
+          expect(typeof(event) === "undefined").toBe(true);
+          done();
+        });
+        var controller = $controller(targetController, {
+          "$scope" : {},
+          "$element": {}
+        });
+        controller.notify();
+        MessageService.unregister(eventName);
       });
     });
 

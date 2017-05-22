@@ -2,8 +2,6 @@ define (["utils/index"], function (Utils) {
 
     var SearchHeader = function (MessageService, $window, $element, $scope) {
       var _this = this;
-
-      this.params = {};
       this.visible= true;
 
       this.notify = function (event) {
@@ -14,6 +12,11 @@ define (["utils/index"], function (Utils) {
       angular.element($window).on("scroll", function (event) {
         _this.visible = Utils.isVisibleAt($element[0], $window);
         $scope.$apply();
+      });
+
+      MessageService.register("searchfooter:to-top", function () {
+        Utils.scrollTo($element);
+        return this;
       });
     };
 
