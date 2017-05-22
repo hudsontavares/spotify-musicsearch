@@ -1,15 +1,15 @@
 define([
   "app",
   "models/ResultSet",
-  "require.text!tests/sample.json",
-  "require.text!tests/albums.json",
-  "require.text!tests/details.json",
-  "require.text!templates/SearchHeader.html",
-  "require.text!templates/SearchBox.html",
-  "require.text!templates/SearchResults.html",
-  "require.text!templates/SearchResult.html",
-  "require.text!templates/SearchFooter.html",
-  "require.text!templates/EntryDetails.html"
+  "require.text!./tests/sample.json",
+  "require.text!./tests/albums.json",
+  "require.text!./tests/details.json",
+  "require.text!./templates/SearchHeader.html",
+  "require.text!./templates/SearchBox.html",
+  "require.text!./templates/SearchResults.html",
+  "require.text!./templates/SearchResult.html",
+  "require.text!./templates/SearchFooter.html",
+  "require.text!./templates/EntryDetails.html"
 ], function (
   app,
   ResultSet,
