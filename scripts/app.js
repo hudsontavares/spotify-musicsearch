@@ -1,4 +1,5 @@
 define([
+  "services/LocalStorageService",
   "services/DataService",
   "services/MessageService",
   "directives/SearchHeader",
@@ -14,6 +15,7 @@ define([
   "controllers/SearchFooter",
   "ng-image-load"
 ], function (
+  LocalStorageService,
   DataService,
   MessageService,
   SearchHeader,
@@ -32,6 +34,7 @@ define([
   var app = angular.module("App", ["ngImageLoad"]);
 
   /* Services assignment */
+  LocalStorageService.assign(app);
   DataService.assign(app);
   MessageService.assign(app);
 

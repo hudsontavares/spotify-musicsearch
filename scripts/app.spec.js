@@ -67,7 +67,8 @@ define([
         DataService.search({
           "q": "Kirk Franklin",
           "type": "album"
-        },
+        })
+        .then(
         function (resultSet) {
           expect(resultSet).toBeTruthy();
           expect(resultSet instanceof ResultSet).toBe(true);
@@ -86,7 +87,8 @@ define([
       it("Digests artist albums Spotify API data properly", function (done) {
         DataService.artistAlbums({
           "id": "test"
-        },
+        })
+        .then(
         function (entries) {
           expect(Array.isArray(entries)).toBe(true);
           expect(entries.length).toBe(20);
@@ -105,9 +107,8 @@ define([
       });
 
       it("Digest artist album details Spotify API data properly", function (done) {
-
-        DataService.albums(
-        ids,
+        DataService.albums(ids)
+        .then(
         function (albums) {
           expect(Array.isArray(albums)).toBe(true);
           expect(albums.length).toBe(20);
@@ -121,6 +122,51 @@ define([
         $httpBackend.flush();
         $httpBackend.resetExpectations();
 
+      });
+    });
+
+    describe("LocalStorageService service", function () {
+      var LocalStorageService, rootScope;
+
+      beforeEach( inject ( function (_$rootScope_, $injector) {
+        LocalStorageService = $injector.get("LocalStorageService").clear();
+        $rootScope = _$rootScope_;
+      }));
+
+      it ("Stores an object into local storage and retrieves it correctly", function () {
+        var key = "TestKey", value = {"Sample Object": true};
+        LocalStorageService.object(key,value);
+        expect(LocalStorageService.object(key)).toEqual(jasmine.objectContaining(value));
+      });
+
+      it ("Stores a string into local storage and retrieves it correctly", function () {
+        var key = "TestKey", value = "Sample String";
+        LocalStorageService.object(key, value);
+        expect(LocalStorageService.object(key)).toBe(value);
+      });
+
+      it ("Stores a number into local storage and retrieves it correctly", function () {
+        var key = "TestKey", value = 42;
+        LocalStorageService.object(key, value);
+        expect(LocalStorageService.object(key)).toBe(value);
+      });
+
+      it ("Stores a boolean into local storage and retrieves it correctly", function () {
+        var key = "TestKey", value = true;
+        LocalStorageService.object(key, value);
+        expect(LocalStorageService.object(key)).toBe(value);
+      });
+
+      it ("Checks a non-existent key on cache", function (done) {
+        var key = "nonExistentKey";
+        LocalStorageService.contains(key)
+          .then( function (value) {
+            done.fail("It must not succeed");
+          }, function (error) {
+            expect(error).toBeUndefined();
+            done();
+          });
+        $rootScope.$apply();
       });
     });
 
