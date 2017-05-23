@@ -4,7 +4,7 @@ define (["utils/index"], function (Utils) {
       var _this = this;
 
       this.notify = function (event) {
-        Utils.preventEvent(event);
+        Utils.dom.preventEvent(event);
         MessageService.trigger("searchfooter:to-top");
       };
     };

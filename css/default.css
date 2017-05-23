@@ -1,3 +1,6 @@
+/* Fonts */
+/* Colors */
+/* Sizes */
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300|Raleway");
 * {
   padding: 0;
@@ -18,19 +21,20 @@ body.with-results {
 }
 
 .viewport {
-  max-width: 144rem;
+  width: 144rem;
   margin: 0 auto;
 }
 
 button {
+  border-radius: 3rem;
   background-color: #D05D84;
   border: none;
-  border-radius: 3rem;
   color: white;
   text-transform: uppercase;
   padding: 1.2rem 2.8rem;
-  font: 1.4em/1 Raleway, Helvetica, sans-serif;
+  font: 1.6em/1 Raleway, Helvetica, sans-serif;
   cursor: pointer;
+  outline: none;
 }
 
 @-webkit-keyframes arrow-move {
@@ -82,7 +86,7 @@ search-header {
 .search-header {
   position: relative;
   background: linear-gradient(to top, #B3455D, #CD4282);
-  padding: 8.7rem 0;
+  padding: 9.8rem 0 9.6rem 0;
   color: white;
   cursor: pointer;
 }
@@ -93,14 +97,12 @@ search-header {
 }
 
 .search-header #geek-label {
-  top: 3.6rem;
-  left: 4rem;
+  top: 3.5rem;
+  left: 4.1rem;
   width: 8rem;
   height: 10rem;
   display: block;
   background: no-repeat center top/cover url("../images/geek_logo.png");
-  font: 1.4em/1 "Open Sans", Arial, sans-serif;
-  color: white;
   text-decoration: none;
 }
 
@@ -108,27 +110,26 @@ search-header {
   top: 4rem;
   right: 4rem;
   font-family: Raleway, Helvetica, sans-serif;
-  font-size: 1.6em;
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
+  font-size: 1.5em;
+  letter-spacing: 0.07rem;
   color: white;
   text-decoration: none;
 }
 
 .search-header h1 {
   position: relative;
-  width: 66.4rem;
-  height: 46.6rem;
+  width: 64.4rem;
+  height: 44.6rem;
   background: no-repeat center top/cover url("../images/music_search.png");
-  margin: 0 auto;
+  margin-left: 40.1rem;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: lighter;
 }
 
 .search-header h1:after {
   position: absolute;
-  left: 50%;
-  bottom: -3.6rem;
+  left: 29.2rem;
+  bottom: -6.5rem;
   width: 4.3rem;
   height: 5.6rem;
   background: no-repeat center top/cover url("../images/arrow_down.png");
@@ -146,22 +147,53 @@ search-header {
 search-box {
   display: block;
   background-color: #333441;
-  padding: 1.4rem 0;
   text-align: center;
 }
 
+search-box:after {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "Loading...";
+  display: block;
+  font: 2rem/100vh Montserrat, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+search-box > * {
+  display: none;
+}
+
+search-box.loaded {
+  display: block;
+  padding: 1.4rem 0;
+}
+
+search-box.loaded:after {
+  content: none;
+}
+
 search-box form {
+  border-radius: 3rem;
+  width: 61rem;
   display: inline-block;
   background-color: white;
   border: 0.2rem solid #6c6c6c;
-  border-radius: 3rem;
   padding: 0.4rem 0.4rem 0.4rem 2.2rem;
 }
 
 search-box form input[type="search"] {
-  width: 34.4em;
+  width: 48.6rem;
+  height: 4rem;
   border: none;
-  font: 1.4em/1.5 Montserrat, Helvetica, sans-serif;
+  font: 1.6em/4rem Montserrat, Helvetica, sans-serif;
+  outline: none;
+}
+
+search-box form button {
+  width: 11.95rem;
 }
 
 search-results section {
@@ -184,7 +216,7 @@ search-results .results.loading .loading {
   color: #474958;
   font: 2.2em/1 Raleway, Helvetica, sans-serif;
   text-align: center;
-  background: no-repeat center 8.9rem/16.9rem 16.3rem url("../images/magnifier.png");
+  background: no-repeat center 8.9rem/16.4rem 16.4rem url("../images/magnifier.png");
 }
 
 search-results .results {
@@ -205,6 +237,7 @@ search-results .results .more.visible {
 }
 
 search-result .entry {
+  border-radius: 0.4rem;
   width: 26.3rem;
   height: 33rem;
   transition: 0.5s;
@@ -212,11 +245,11 @@ search-result .entry {
   display: inline-block;
   vertical-align: top;
   margin: 0 2.2rem 6rem 0;
-  border-radius: 0.4rem;
   cursor: pointer;
   overflow: hidden;
   opacity: 0;
   border: none;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 search-result .entry.loaded {
@@ -264,7 +297,7 @@ search-result .entry:hover:before, search-result .entry[data-type="artist"]:hove
   left: 5.2rem;
   padding-top: 10rem;
   background: no-repeat center top/10rem 8.8rem url("../images/details.png");
-  font: 1.8em/1 Raleway, Helvetica, sans-serif;
+  font: 2rem/1 Raleway, Helvetica, sans-serif;
   color: white;
   opacity: 1;
   content: "View Tracks";
@@ -275,24 +308,32 @@ search-result .entry[data-type="artist"]:hover:before {
   content: "View Albums";
 }
 
+search-result .entry.loading-details:after {
+  content: "Loading...";
+}
+
 search-result .entry:hover:after {
   white-space: normal;
   overflow: auto;
   text-overflow: clip;
 }
 
-search-result .entry:hover img {
-  -webkit-filter: blur(1rem);
-          filter: blur(1rem);
+search-result .entry:hover image {
+  -webkit-filter: url("#blur");
+          filter: url("#blur");
 }
 
-search-result img {
+search-result svg {
   width: 100%;
   height: auto;
   transition: 0.7s;
 }
 
-search-result img.horizontal {
+search-result svg image, search-result svg img {
+  display: block;
+}
+
+search-result svg.horizontal {
   width: auto;
   height: 100%;
 }
@@ -317,9 +358,9 @@ entry-details .overlay.show {
 entry-details .entry {
   width: 75rem;
   height: 90vh;
+  border-radius: 0.4rem;
   display: block;
   margin: 5vh auto;
-  overflow-y: scroll;
   background-color: white;
   position: relative;
 }
@@ -328,8 +369,10 @@ entry-details .entry header {
   width: 75rem;
   height: 32.2rem;
   position: fixed;
+  border-radius: 0.4rem 0.4rem 0 0;
   display: block;
   overflow: hidden;
+  background-color: white;
 }
 
 entry-details .entry header:before {
@@ -366,7 +409,11 @@ entry-details .entry header .close {
 }
 
 entry-details .entry .albums {
-  padding: 35.2rem 3rem 3rem;
+  height: 66rem;
+  position: relative;
+  top: 32.5rem;
+  padding: 3rem;
+  overflow-y: scroll;
 }
 
 entry-details .entry .albums h2 {

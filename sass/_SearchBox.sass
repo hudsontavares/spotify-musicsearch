@@ -1,17 +1,40 @@
 search-box
   display: block
   background-color: #333441
-  padding: 1.4rem 0
   text-align: center
 
+  &:after
+    +size(100vw)
+    +position(absolute, $top: 0, $left: 0)
+    content: "Loading..."
+    display: block
+    font: 2rem/100vh $font-montserrat
+    color: white
+    text-align: center
+
+  & > *
+    display: none
+
+  &.loaded
+    display: block
+    padding: 1.4rem 0
+
+    &:after
+      content: none
+
   form
+    +rounded-corners(3rem)
+    +size(61rem)
     display: inline-block
     background-color: white
     border: 0.2rem solid #6c6c6c
-    border-radius: 3rem
     padding: 0.4rem 0.4rem 0.4rem 2.2rem
 
     input[type="search"]
-      +size(34.4em)
+      +size(48.6rem, 4rem)
       border: none
-      font: 1.4em/1.5 $font-montserrat
+      font: 1.6em/4rem $font-montserrat
+      outline: none
+
+    button
+      +size(11.95rem)

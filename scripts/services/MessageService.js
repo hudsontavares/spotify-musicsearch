@@ -3,12 +3,18 @@ define(["models/EventListener"], function (EventListener) {
     var listeners = {};
 
     /* Registers a new event listener */
-    this.register = function (event, action) {
-      if (typeof (listeners[event]) === "undefined")
-        listeners[event] = [];
-      var listener = new EventListener(event, action);
-      listeners[event].push(listener);
-      return listener;
+    this.register = function (list, action) {
+      var output = [];
+      list = Array.isArray(list) ? list : [list];
+      for (var counter = 0, size = list.length; counter < size; counter++) {
+        var event = list[counter];
+        if (typeof (listeners[event]) === "undefined")
+          listeners[event] = [];
+        var listener = new EventListener(event, action);
+        listeners[event].push(listener);
+        output.push(listener);
+      }
+      return output.length === 1 ? output.pop() : output;
     };
 
     /* Retrieves all listeners for the specified event */

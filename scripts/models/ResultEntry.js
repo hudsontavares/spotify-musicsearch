@@ -14,8 +14,8 @@ define([], function () {
     this.title = source.name;
     this.image = hasEntries(source.images)? source.images[0] : {
       "url": "images/spotify.svg",
-      "width": 470,
-      "height": 480
+      "width": 263,
+      "height": 330
     };
     this.id = source.id;
     this.release_year = (source.release_date || "Unknown").split("-")[0];
@@ -23,5 +23,6 @@ define([], function () {
     this.loaded = !hasEntries(source.images);
     this.horizontal = this.image !== null && this.image.width >= this.image.height;
     this.has_details = this.type === "artist";
+    this.is_loading_details = false;
   }
 });

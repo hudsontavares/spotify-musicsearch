@@ -2,7 +2,7 @@ entry-details
   .overlay
     +position(fixed, $top: 0, $left: 0)
     +size(100vw, 100vh)
-    background-color: rgba(51, 52, 65, 0.5)
+    background-color: $overlay-color
     z-index: 3
     display: none
   .overlay.show
@@ -10,20 +10,22 @@ entry-details
     display: block
   .entry
     +size(75rem, 90vh)
+    +rounded-corners()
     display: block
     margin: 5vh auto
-    overflow-y: scroll
     background-color: white
     position: relative
     header
       +size(75rem, 32.2rem)
       +position(fixed)
+      +rounded-corners(0.4rem 0.4rem 0 0)
       display: block
       overflow: hidden
+      background-color: white
       &:before
         +position(absolute, $top: 0, $left: 0)
         +size(100%, 100%)
-        background-color: rgba(51, 52, 65, 0.5)
+        background-color: $overlay-color
         content: ""
       img
         width: 100%
@@ -38,7 +40,10 @@ entry-details
         color: white
         text-decoration: none
     .albums
-      padding: 35.2rem 3rem 3rem
+      +size(null, 66rem)
+      +position(relative, $top: 32.5rem)
+      padding: 3rem
+      overflow-y: scroll
       h2
         font: 2em/1 $font-montserrat
         color: #2A2A33

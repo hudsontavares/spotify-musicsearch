@@ -10,7 +10,7 @@ gulp.task("sass", function () {
     .pipe(sass({
       "includePaths": ["./sass/"],
       "outputStyle": "expanded"
-    }))
+    }).on("error", sass.logError))
     .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
     .pipe(gulp.dest("./css/"));
 });

@@ -5,17 +5,17 @@ define (["utils/index"], function (Utils) {
       this.visible= true;
 
       this.notify = function (event) {
-        Utils.preventEvent(event);
+        Utils.dom.preventEvent(event);
         MessageService.trigger("searchheader:notify:click", event);
       };
 
       angular.element($window).on("scroll", function (event) {
-        _this.visible = Utils.isVisibleAt($element[0], $window);
+        _this.visible = Utils.dom.isVisibleAt($element[0], $window);
         $scope.$apply();
       });
 
       MessageService.register("searchfooter:to-top", function () {
-        Utils.scrollTo($element);
+        Utils.dom.scrollTo($element);
         return this;
       });
     };

@@ -3,8 +3,8 @@ search-header
 
 .search-header
   +position(relative)
-  background: linear-gradient(to top, #B3455D, #CD4282)
-  padding: 8.7rem 0
+  background: linear-gradient(to top, $header-gradient-start, $header-gradient-end)
+  padding: 9.8rem 0 9.6rem 0
   color: white
   cursor: pointer
 
@@ -13,33 +13,30 @@ search-header
     cursor: pointer
 
   #geek-label
-    +position($top: 3.6rem, $left: 4rem)
+    +position($top: 3.5rem, $left: 4.1rem)
     +size(8rem, 10rem)
     display: block
     background: no-repeat center top/cover url("../images/geek_logo.png")
-    font: 1.4em/1 $font-open-sans
-    color: white
     text-decoration: none
 
   #spotify
     +position($top: 4rem, $right: 4rem)
     font-family: $font-raleway
-    font-size: 1.6em
-    font-weight: lighter
-    letter-spacing: 0.1rem
+    font-size: 1.5em
+    letter-spacing: 0.07rem
     color: white
     text-decoration: none
 
   h1
     +position(relative)
-    +size(66.4rem, 46.6rem)
+    +size(64.4rem, 44.6rem)
     background: no-repeat center top/cover url("../images/music_search.png")
-    margin: 0 auto
+    margin-left: 40.1rem
     font-family: $font-open-sans
     font-weight: lighter
 
   h1:after
-    +position(absolute, $bottom: -3.6rem, $left: 50%)
+    +position(absolute, $bottom: -6.5rem, $left: 29.2rem)
     +size(4.3rem, 5.6rem)
     background: no-repeat center top/cover url("../images/arrow_down.png")
     display: block
