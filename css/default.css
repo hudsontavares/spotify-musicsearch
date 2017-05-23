@@ -1,3 +1,5 @@
+/* Fonts */
+/* Colors */
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300|Raleway");
 * {
   padding: 0;
@@ -23,9 +25,9 @@ body.with-results {
 }
 
 button {
+  border-radius: 3rem;
   background-color: #D05D84;
   border: none;
-  border-radius: 3rem;
   color: white;
   text-transform: uppercase;
   padding: 1.2rem 2.8rem;
@@ -82,7 +84,7 @@ search-header {
 .search-header {
   position: relative;
   background: linear-gradient(to top, #B3455D, #CD4282);
-  padding: 8.7rem 0;
+  padding: 9.8rem 0 9.6rem 0;
   color: white;
   cursor: pointer;
 }
@@ -93,14 +95,12 @@ search-header {
 }
 
 .search-header #geek-label {
-  top: 3.6rem;
-  left: 4rem;
+  top: 3.5rem;
+  left: 4.1rem;
   width: 8rem;
   height: 10rem;
   display: block;
   background: no-repeat center top/cover url("../images/geek_logo.png");
-  font: 1.4em/1 "Open Sans", Arial, sans-serif;
-  color: white;
   text-decoration: none;
 }
 
@@ -108,19 +108,18 @@ search-header {
   top: 4rem;
   right: 4rem;
   font-family: Raleway, Helvetica, sans-serif;
-  font-size: 1.6em;
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
+  font-size: 1.5em;
+  letter-spacing: 0.07rem;
   color: white;
   text-decoration: none;
 }
 
 .search-header h1 {
   position: relative;
-  width: 66.4rem;
-  height: 46.6rem;
+  width: 64.4rem;
+  height: 44.6rem;
   background: no-repeat center top/cover url("../images/music_search.png");
-  margin: 0 auto;
+  margin-left: 40.1rem;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: lighter;
 }
@@ -175,10 +174,10 @@ search-box.loaded:after {
 }
 
 search-box form {
+  border-radius: 3rem;
   display: inline-block;
   background-color: white;
   border: 0.2rem solid #6c6c6c;
-  border-radius: 3rem;
   padding: 0.4rem 0.4rem 0.4rem 2.2rem;
 }
 
@@ -229,6 +228,7 @@ search-results .results .more.visible {
 }
 
 search-result .entry {
+  border-radius: 0.4rem;
   width: 26.3rem;
   height: 33rem;
   transition: 0.5s;
@@ -236,7 +236,6 @@ search-result .entry {
   display: inline-block;
   vertical-align: top;
   margin: 0 2.2rem 6rem 0;
-  border-radius: 0.4rem;
   cursor: pointer;
   overflow: hidden;
   opacity: 0;
@@ -345,9 +344,9 @@ entry-details .overlay.show {
 entry-details .entry {
   width: 75rem;
   height: 90vh;
+  border-radius: 0.4rem;
   display: block;
   margin: 5vh auto;
-  overflow-y: scroll;
   background-color: white;
   position: relative;
 }
@@ -356,6 +355,7 @@ entry-details .entry header {
   width: 75rem;
   height: 32.2rem;
   position: fixed;
+  border-radius: 0.4rem 0.4rem 0 0;
   display: block;
   overflow: hidden;
   background-color: white;
@@ -395,7 +395,11 @@ entry-details .entry header .close {
 }
 
 entry-details .entry .albums {
-  padding: 35.2rem 3rem 3rem;
+  height: 67rem;
+  position: relative;
+  top: 32.5rem;
+  padding: 3rem;
+  overflow-y: scroll;
 }
 
 entry-details .entry .albums h2 {
