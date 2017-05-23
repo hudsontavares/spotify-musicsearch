@@ -146,15 +146,19 @@ search-header {
 search-box {
   display: block;
   background-color: #333441;
-  padding: 1.4rem 0;
   text-align: center;
 }
 
 search-box:after {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
   content: "Loading...";
   display: block;
-  font: 2rem/1 Montserrat, Helvetica, sans-serif;
+  font: 2rem/100vh Montserrat, Helvetica, sans-serif;
   color: white;
+  text-align: center;
 }
 
 search-box > * {
@@ -163,6 +167,7 @@ search-box > * {
 
 search-box.loaded {
   display: block;
+  padding: 1.4rem 0;
 }
 
 search-box.loaded:after {

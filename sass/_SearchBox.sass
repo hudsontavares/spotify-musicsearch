@@ -1,20 +1,23 @@
 search-box
   display: block
   background-color: #333441
-  padding: 1.4rem 0
   text-align: center
 
   &:after
+    +size(100vw)
+    +position(absolute, $top: 0, $left: 0)
     content: "Loading..."
     display: block
-    font: 2rem/1 $font-montserrat
+    font: 2rem/100vh $font-montserrat
     color: white
+    text-align: center
 
   & > *
     display: none
 
   &.loaded
     display: block
+    padding: 1.4rem 0
 
     &:after
       content: none
