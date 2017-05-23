@@ -28,7 +28,7 @@ define(["jquery"], function ($) {
     },
     "scrollTo": function (element) {
       var target = $(element);
-      $("body").animate({"scrollTop": target.offset().top});
+      $("html, body").animate({"scrollTop": target.offset().top});
     }
   };
 

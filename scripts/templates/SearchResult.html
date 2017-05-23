@@ -1,3 +1,8 @@
 <div ng-class="{'search-results': true, 'entry': true, 'loaded': entry.loaded}" ng-attr-data-type="{{ entry.type }}" ng-attr-data-title="{{ entry.title }}">
-  <img ng-src="{{ entry.image.url }}" ng-load="entry.loaded = true" ng-class="{'horizontal': entry.horizontal}" />
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ng-attr-view_box="{{ '0 0 ' + entry.image.width + ' ' + entry.image.height }}" preserveAspectRatio="xMinYMin slice" ng-class="{'horizontal': entry.horizontal}">
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" ng-attr-std_deviation="{{ 10 }}" />
+    </filter>
+    <image ng-href="{{ entry.image.url }}" xlink:href="" ng-attr-width="{{ entry.image.width }}" ng-attr-height="{{ entry.image.height }}" ng-image-load="entry.loaded = true" />
+  </svg>
 </div>

@@ -150,6 +150,25 @@ search-box {
   text-align: center;
 }
 
+search-box:after {
+  content: "Loading...";
+  display: block;
+  font: 2rem/1 Montserrat, Helvetica, sans-serif;
+  color: white;
+}
+
+search-box > * {
+  display: none;
+}
+
+search-box.loaded {
+  display: block;
+}
+
+search-box.loaded:after {
+  content: none;
+}
+
 search-box form {
   display: inline-block;
   background-color: white;
@@ -264,7 +283,7 @@ search-result .entry:hover:before, search-result .entry[data-type="artist"]:hove
   left: 5.2rem;
   padding-top: 10rem;
   background: no-repeat center top/10rem 8.8rem url("../images/details.png");
-  font: 1.8em/1 Raleway, Helvetica, sans-serif;
+  font: 2rem/1 Raleway, Helvetica, sans-serif;
   color: white;
   opacity: 1;
   content: "View Tracks";
@@ -281,18 +300,22 @@ search-result .entry:hover:after {
   text-overflow: clip;
 }
 
-search-result .entry:hover img {
-  -webkit-filter: blur(1rem);
-          filter: blur(1rem);
+search-result .entry:hover image {
+  -webkit-filter: url("#blur");
+          filter: url("#blur");
 }
 
-search-result img {
+search-result svg {
   width: 100%;
   height: auto;
   transition: 0.7s;
 }
 
-search-result img.horizontal {
+search-result svg image, search-result svg img {
+  display: block;
+}
+
+search-result svg.horizontal {
   width: auto;
   height: 100%;
 }
@@ -330,6 +353,7 @@ entry-details .entry header {
   position: fixed;
   display: block;
   overflow: hidden;
+  background-color: white;
 }
 
 entry-details .entry header:before {

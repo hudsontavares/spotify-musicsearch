@@ -12,7 +12,7 @@ define([
   "controllers/SearchResults",
   "controllers/EntryDetails",
   "controllers/SearchFooter",
-  "ng-load"
+  "ng-image-load"
 ], function (
   DataService,
   MessageService,
@@ -29,7 +29,7 @@ define([
   SearchFooterController
   ) {
 
-  var app = angular.module("App", ['ngLoad']);
+  var app = angular.module("App", ["ngImageLoad"]);
 
   /* Services assignment */
   DataService.assign(app);

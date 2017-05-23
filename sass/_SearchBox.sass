@@ -4,6 +4,21 @@ search-box
   padding: 1.4rem 0
   text-align: center
 
+  &:after
+    content: "Loading..."
+    display: block
+    font: 2rem/1 $font-montserrat
+    color: white
+
+  & > *
+    display: none
+
+  &.loaded
+    display: block
+
+    &:after
+      content: none
+
   form
     display: inline-block
     background-color: white
