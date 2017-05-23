@@ -5,7 +5,7 @@ define (["utils/index"], function (Utils) {
       var aliasList = {};
       this.search = function (event) {
         try {
-          Utils.preventEvent(event);
+          Utils.dom.preventEvent(event);
           this.check(this.params);
           MessageService.trigger("searchbox:search", this.params);
         }
@@ -27,7 +27,7 @@ define (["utils/index"], function (Utils) {
         return this;
       };
       this.focus = function () {
-        Utils.scrollTo($element);
+        Utils.dom.scrollTo($element);
         return this;
       };
 

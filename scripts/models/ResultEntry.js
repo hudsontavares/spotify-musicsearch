@@ -23,5 +23,6 @@ define([], function () {
     this.loaded = !hasEntries(source.images);
     this.horizontal = this.image !== null && this.image.width >= this.image.height;
     this.has_details = this.type === "artist";
+    this.is_loading_details = false;
   }
 });

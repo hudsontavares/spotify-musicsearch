@@ -1,4 +1,4 @@
-<div ng-class="{'search-results': true, 'entry': true, 'loaded': entry.loaded}" ng-attr-data-type="{{ entry.type }}" ng-attr-data-title="{{ entry.title }}">
+<div ng-class="{'search-results': true, 'entry': true, 'loaded': entry.loaded, 'loading-details': entry.is_loading_details}" ng-attr-data-type="{{ entry.type }}" ng-attr-data-title="{{ entry.title }}">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ng-attr-view_box="{{ '0 0 ' + entry.image.width + ' ' + entry.image.height }}" preserveAspectRatio="xMinYMin slice" ng-class="{'horizontal': entry.horizontal}">
     <filter id="blur">
       <feGaussianBlur in="SourceGraphic" ng-attr-std_deviation="{{ 10 }}" />

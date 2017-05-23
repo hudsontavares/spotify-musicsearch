@@ -248,7 +248,7 @@ search-result .entry {
   overflow: hidden;
   opacity: 0;
   border: none;
-  box-shadow: 0.1rem 0.1rem 1rem black;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 search-result .entry.loaded {
@@ -305,6 +305,10 @@ search-result .entry:hover:before, search-result .entry[data-type="artist"]:hove
 
 search-result .entry[data-type="artist"]:hover:before {
   content: "View Albums";
+}
+
+search-result .entry.loading-details:after {
+  content: "Loading...";
 }
 
 search-result .entry:hover:after {

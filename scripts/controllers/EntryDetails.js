@@ -6,7 +6,7 @@ define(["utils/index"], function (Utils) {
     this.details = [];
 
     this.unset = function (event) {
-      Utils.preventEvent(event);
+      Utils.dom.preventEvent(event);
       MessageService.trigger("entry:details:clear");
       return _this;
     };
@@ -31,8 +31,11 @@ define(["utils/index"], function (Utils) {
           });
         },
         function (error) {
-          /* TODO: error treatment */
-          console.log(error);
+          $window.alert([
+            "The following error happened while retrieving artist albums data:",
+            Utils.request.getMessage(error)
+          ].join("\n"));
+          MessageService.trigger("entry:details:error", error, entry);
         }
       ).then( function () {
         DataService.albums(
@@ -41,8 +44,11 @@ define(["utils/index"], function (Utils) {
             MessageService.trigger("entry:details:done", _this.entry = entry, _this.details = entries);
           },
           function (error) {
-            /* TODO: error treatment */
-            console.log(error);
+            $window.alert([
+              "The following error happened while retrieving artist album details data:",
+              Utils.request.getMessage(error)
+            ].join("\n"));
+            MessageService.trigger("entry:details:error", error, entry);
           }
         );
       });

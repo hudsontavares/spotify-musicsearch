@@ -34,12 +34,13 @@ define (["utils/index"], function (Utils) {
       };
 
       this.showDetails = function (entry) {
+        entry.is_loading_details = true;
         MessageService.trigger("entry:details", entry);
         return this;
       };
 
       this.focus = function () {
-        Utils.scrollTo($element);
+        Utils.dom.scrollTo($element);
         return this;
       };
 
@@ -56,15 +57,23 @@ define (["utils/index"], function (Utils) {
             _this.loader.message = "No results found.";
             return;
           }
-          Utils.addClass(document.body, "with-results");
+          Utils.dom.addClass(document.body, "with-results");
           _this.loader.unset();
           MessageService.trigger("searchresults:render");
         },
         function (error) {
-          Utils.removeClass(document.body, "with-results");
+          Utils.dom.removeClass(document.body, "with-results");
           return _this.loader.set(error);
         }
       );
+      });
+
+      MessageService.register("entry:details:done", function (entry) {
+        return entry.is_loading_details = false;
+      });
+
+      MessageService.register("entry:details:error", function (error, entry) {
+        return entry.is_loading_details = false;
       });
     };
 
