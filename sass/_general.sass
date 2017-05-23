@@ -5,25 +5,26 @@
   margin: 0
 
 html, body
-  font-size: 10px
+  font-size: $default-rem-size
 
 body
   +transition(2s)
-  background-color: #333441
+  background-color: $body-default-color
 
 body.with-results
-  background-color: #383A49
+  background-color: $body-with-results-color
 
 .viewport
-  max-width: $viewport-max-width
+  width: $viewport-width
   margin: 0 auto
 
 button
   +rounded-corners(3rem)
-  background-color: #D05D84
+  background-color: $button-color
   border: none
   color: white
   text-transform: uppercase
   padding: 1.2rem 2.8rem
-  font: 1.4em/1 $font-raleway
+  font: 1.6em/1 $font-raleway
   cursor: pointer
+  outline: none

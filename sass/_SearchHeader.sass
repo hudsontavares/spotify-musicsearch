@@ -3,7 +3,7 @@ search-header
 
 .search-header
   +position(relative)
-  background: linear-gradient(to top, #B3455D, #CD4282)
+  background: linear-gradient(to top, $header-gradient-start, $header-gradient-end)
   padding: 9.8rem 0 9.6rem 0
   color: white
   cursor: pointer
@@ -36,7 +36,7 @@ search-header
     font-weight: lighter
 
   h1:after
-    +position(absolute, $bottom: -3.6rem, $left: 50%)
+    +position(absolute, $bottom: -6.5rem, $left: 29.2rem)
     +size(4.3rem, 5.6rem)
     background: no-repeat center top/cover url("../images/arrow_down.png")
     display: block
