@@ -28,12 +28,31 @@ The following tasks are available:
 | watch | Triggers `sass` and keeps a process that executes the task again as soon as some change is done on .sass file entries |
 | default | Triggers watch |
 
-**no changes** should be done directly on CSS. It is a SASS project, so anything that must be changed must be done on .sass files, that are the source from where the CSS is generated.
+**no changes** should be done directly on CSS. It is a SASS-based project, so any changes should be done on .sass files, that are from where the CSS output is generated.
 
 ## Tests
 The command line version of tests can be run using the aforementioned `gulp test` task, that seems to be the easiest way to execute them. On the visual front, the `/tests.html` page executes Jasmine tests too.
 
 ## Application architecture
+The application is built on top of 6 directives (all of them have an HTML template counterpart):
+
+- SearchHeader **- the header part**
+- SearchBox **- the box with the search field and button**
+- SearchResults **- the box where multiple result entries are displayed**
+- SearchResult **- represents each result entry**
+- EntryDetails **- displays the details for a result on an overlay**
+- SearchFooter **- the footer part**
+
+The only directive that misses a controller counterpart is _SearchResult_.
+
+These controllers interact with the following services:
+- DataService **- handles request to the Spotify API**
+- LocalStorageService **- client-side cache layer that utilizes the window.localStorage to speed up Spotify requests**
+- MessageService **- an observable object that accepts subscriptions and handles event triggering**
+
+The architecture is completed by some accessory objects, like the models, utilized to parse data retrieved from Spotify API, and the utils methods.
+
+## Files structure
 - .idea **- project's visual diagrams**
 - css **- result files from SASS compilation**
 - images **- graphic data**
