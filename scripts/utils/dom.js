@@ -26,9 +26,12 @@ define(["jquery"], function ($) {
       };
       return markers.element.top >= markers.window.top;
     },
-    "scrollTo": function (element) {
+    "scrollTo": function (element, complete) {
       var target = $(element);
-      $("html, body").animate({"scrollTop": target.offset().top});
+      $("html, body").animate({"scrollTop": target.offset().top}, function () {
+        if (typeof(complete) === "function")
+          complete($);
+      });
     }
   };
 

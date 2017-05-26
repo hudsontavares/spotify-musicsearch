@@ -188,6 +188,7 @@ search-box form input[type="search"] {
   width: 48.6rem;
   height: 4rem;
   border: none;
+  -webkit-appearance: none;
   font: 1.6em/4rem Montserrat, Helvetica, sans-serif;
   outline: none;
 }
@@ -357,10 +358,9 @@ entry-details .overlay.show {
 
 entry-details .entry {
   width: 75rem;
-  height: 90vh;
   border-radius: 0.4rem;
   display: block;
-  margin: 5vh auto;
+  margin: 0 auto;
   position: relative;
   overflow-y: scroll;
 }
@@ -410,9 +410,8 @@ entry-details .entry header .close {
 
 entry-details .entry .albums {
   width: 69rem;
-  height: calc(90vh - 42.5rem);
-  position: fixed;
-  top: 36.5rem;
+  height: calc(90vh - 32.2rem);
+  margin-top: 32.2rem;
   background-color: white;
   padding: 3rem;
   overflow-y: scroll;

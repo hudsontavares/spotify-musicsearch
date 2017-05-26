@@ -27,7 +27,9 @@ define (["utils/index"], function (Utils) {
         return this;
       };
       this.focus = function () {
-        Utils.dom.scrollTo($element);
+        Utils.dom.scrollTo($element, function ($) {
+          $($element).find("input[type='search']").focus();
+        });
         return this;
       };
 
