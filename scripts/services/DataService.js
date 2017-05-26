@@ -37,7 +37,7 @@ define(["models/ResultSet", "models/ResultEntry"], function (ResultSet, ResultEn
       };
 
       /* Get album details by ID */
-      this.albums = function albums (ids, success, failure) {
+      this.albums = function albums (ids) {
         return $http({
           "method": "GET",
           "url": _this.baseUrl + "/v1/albums",
