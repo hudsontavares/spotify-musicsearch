@@ -7,6 +7,8 @@ define([], function () {
       return output;
     },
     "getHash": function (method, params) {
+      if (typeof(params.$$hashKey) !== "undefined")
+        delete params.$$hashKey;
       return method.name + JSON.stringify(params);
     }
   };

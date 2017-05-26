@@ -54,7 +54,6 @@ define (["utils/index"], function (Utils) {
             _this.resultSet.entries = [];
           LocalStorageService.contains(hash)
             .then( function (data) {
-              console.log(data);
               return data.value;
             }, function () {
               return DataService.search(params);

@@ -51,6 +51,7 @@ define(["utils/index"], function (Utils) {
         })
         .then( function (entries) {
           MessageService.trigger("entry:details:done", _this.entry = entry, _this.details = entries);
+          return entries;
         },
         function (error) {
           $window.alert([

@@ -361,8 +361,8 @@ entry-details .entry {
   border-radius: 0.4rem;
   display: block;
   margin: 5vh auto;
-  background-color: white;
   position: relative;
+  overflow-y: scroll;
 }
 
 entry-details .entry header {
@@ -409,9 +409,11 @@ entry-details .entry header .close {
 }
 
 entry-details .entry .albums {
-  height: 66rem;
-  position: relative;
-  top: 32.5rem;
+  width: 69rem;
+  height: calc(90vh - 42.5rem);
+  position: fixed;
+  top: 36.5rem;
+  background-color: white;
   padding: 3rem;
   overflow-y: scroll;
 }

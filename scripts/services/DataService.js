@@ -4,7 +4,7 @@ define(["models/ResultSet", "models/ResultEntry"], function (ResultSet, ResultEn
       this.baseUrl = 'https://api.spotify.com';
 
       /* Searches data from Spotify */
-      this.search = function (params) {
+      this.search = function search (params) {
         return $http({
           "method": "GET",
           "url": _this.baseUrl + "/v1/search",
@@ -18,7 +18,7 @@ define(["models/ResultSet", "models/ResultEntry"], function (ResultSet, ResultEn
       };
 
       /* Gets artist albums from Spotify */
-      this.artistAlbums = function (entry) {
+      this.artistAlbums = function artistAlbums (entry) {
         return $http({
           "method": "GET",
           "url": _this.baseUrl + "/v1/artists/" + entry.id + "/albums",
@@ -37,7 +37,7 @@ define(["models/ResultSet", "models/ResultEntry"], function (ResultSet, ResultEn
       };
 
       /* Get album details by ID */
-      this.albums = function (ids, success, failure) {
+      this.albums = function albums (ids, success, failure) {
         return $http({
           "method": "GET",
           "url": _this.baseUrl + "/v1/albums",

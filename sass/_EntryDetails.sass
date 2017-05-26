@@ -13,8 +13,8 @@ entry-details
     +rounded-corners()
     display: block
     margin: 5vh auto
-    background-color: white
     position: relative
+    overflow-y: scroll
     header
       +size(75rem, 32.2rem)
       +position(fixed)
@@ -40,8 +40,9 @@ entry-details
         color: white
         text-decoration: none
     .albums
-      +size(null, 66rem)
-      +position(relative, $top: 32.5rem)
+      +size(69rem, calc(90vh - 42.5rem))
+      +position(fixed, 36.5rem)
+      background-color: white
       padding: 3rem
       overflow-y: scroll
       h2
